@@ -9,7 +9,7 @@ for seed in ${SEEDS[@]}; do
 
     # STEP1: train teacher model (English: en)
 
-    python main_single.py \
+    python3 main_single.py \
         --do_train \
         --gpu_ids ${GPU_IDS} \
         --seed ${seed} \
@@ -19,7 +19,7 @@ for seed in ${SEEDS[@]}; do
 
     # STEP2: single-source teacher-student learning
 
-    python main_single.py \
+    python3 main_single.py \
         --do_train \
         --do_KD \
         --gpu_ids ${GPU_IDS} \
@@ -30,7 +30,7 @@ for seed in ${SEEDS[@]}; do
         --src_model_dir conll-model-${seed} \
         --output_dir conll-model-${seed}/ts-${SRC_LANG}-${TGT_LANG}
 
-    python main_single.py \
+    python3 main_single.py \
         --do_predict \
         --gpu_ids ${GPU_IDS} \
         --seed ${seed} \

@@ -11,7 +11,7 @@ MAX_EPOCH=10
 # STEP1: train teacher models for each source language, as in `run_single.sh`
 for seed in ${SEEDS[@]}; do
     for lan in ${LANGS[@]}; do
-        python main_single.py \
+        python3 main_single.py \
             --do_train \
             --gpu_ids ${GPU_IDS} \
             --seed ${seed} \
@@ -23,7 +23,7 @@ for seed in ${SEEDS[@]}; do
         for g in ${GAMMA[@]}; do
 
             # STEP2: train domain model
-            python domain_learner.py \
+            python3 domain_learner.py \
                 --do_train \
                 --gpu_ids ${GPU_IDS} \
                 --seed ${seed} \
@@ -37,7 +37,7 @@ for seed in ${SEEDS[@]}; do
                 --output_dir domain-model/${TGT_LANG}-rank_${rank}-gamma_${g}-seed_${seed}
 
             # STEP3: multi-source teacher-student learning
-            python main.py \
+            python3 main.py \
                 --do_train \
                 --gpu_ids ${GPU_IDS} \
                 --seed ${seed} \
@@ -52,7 +52,7 @@ for seed in ${SEEDS[@]}; do
                 --sim_type learn \
                 --output_dir result-${seed}/ts-learn-var-domain-${TGT_LANG}-rank_${rank}-gamma_${g}
 
-            python main.py \
+            python3 main.py \
                 --do_predict \
                 --gpu_ids ${GPU_IDS} \
                 --seed ${seed} \
