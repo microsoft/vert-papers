@@ -2,7 +2,7 @@
 
 This repository is the official implementation of
 
-[Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources](https://www.microsoft.com/en-us/research/publication/enhanced-meta-learning-for-cross-lingual-named-entity-recognition-with-minimal-resources/) (ACL 2020).  
+[Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources](https://www.microsoft.com/en-us/research/publication/enhanced-meta-learning-for-cross-lingual-named-entity-recognition-with-minimal-resources/) (AAAI 2020).  
 _Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin_
 
 If you find this repo helpful, please cite the following:
