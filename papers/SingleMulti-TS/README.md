@@ -78,7 +78,7 @@ All datasets are annotated with 4 entity types: LOC, MISC, ORG, and PER. Each da
 
 ## 📋 Results
 
-We reports the zero-resource cross-lingual NER results of the proposed UniTrans on the 3 target languages, alongside those reported by prior state-of-the-art methods and those of two re-implemented baseline methods, i.e., Model Transfer and Data Transfer.
+We reports the zero-resource cross-lingual NER results of the proposed UniTrans on the 3 target languages, alongside those reported by prior state-of-the-art methods.
 
 |                                                                                  | es        | nl        | de        |
 | -------------------------------------------------------------------------------- | --------- | --------- | --------- |
