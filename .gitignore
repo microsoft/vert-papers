@@ -332,3 +332,4 @@ ASALocalRun/
 ## Ide
 .vscode
 .history
+.DS_Store
