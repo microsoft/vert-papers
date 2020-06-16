@@ -76,6 +76,11 @@ We use the following widely-used benchmark datasets for experiments:
 
 All datasets are annotated with 4 entity types: LOC, MISC, ORG, and PER. Each dataset is split into training, dev, and test sets.
 
+All datasets are CoNLL-style and BIO tagging scheme.
+In this repo, we only public some sample of this corpus.
+You can download they from the websites [CoNLL-2003](http://www.cnts.ua.ac.be/conll2003/ner.tgz), and [CoNLL-2002](http://www.cnts.ua.ac.be/conll2002/ner.tgz).
+And put they to the file path `data/conll/ner/${language}/${train_type}.txt`.
+
 ## 📋 Results
 
 We reports the zero-resource cross-lingual NER results of the proposed UniTrans on the 3 target languages, alongside those reported by prior state-of-the-art methods.

@@ -86,9 +86,14 @@ We use the following widely-used benchmark datasets for experiments:
 
 - CoNLL-2002 [Tjong Kim Sang, 2002](https://www.aclweb.org/anthology/W02-2024/) for Spanish [es] and Dutch [nl] NER;
 - CoNLL-2003 [Tjong Kim Sang and De Meulder, 2003](https://www.aclweb.org/anthology/W03-0419/) for English [en] and German [de] NER;
-- NoDaLiDa-2019 [Johansen, 2019](https://www.aclweb.org/anthology/W19-6123/) for Norwegian [no] NER.
+- NoDaLiDa-2019 [Johansen, 2019](https://www.aclweb.org/anthology/W19-6123/) for Norwegian [no] NER (We use Bokm˚al rather than Nynorsk here, considering that it is used by 85–90% of the population of Norway.).
 
 All datasets are annotated with 4 entity types: LOC, MISC, ORG, and PER. Each dataset is split into training, dev, and test sets.
+
+All datasets are CoNLL-style and BIO tagging scheme.
+In this repo, we only public some sample of this corpus.
+You can download they from the websites [CoNLL-2003](http://www.cnts.ua.ac.be/conll2003/ner.tgz), [CoNLL-2002](http://www.cnts.ua.ac.be/conll2002/ner.tgz), and [NoDaLiDa-2019](https://github.com/ljos/navnkjenner).
+And put they to the file path `data/conll/ner/${language}/${train_type}.txt`.
 
 ## 📋 Results
 

@@ -1,0 +1,38 @@
+-DOCSTART- O
+
+Großer O
+Foto-Wettbeweb O
+" O
+Nordendler B-ORG
+" O
+laden O
+die O
+Nordendler B-MISC
+ein O
+
+NORDEND B-LOC
+. O
+
+Einen O
+Fotowettbewerb O
+mit O
+dem O
+Thema O
+" O
+Leben O
+und O
+feiern O
+im O
+Nordend B-LOC
+und O
+mit O
+den O
+Nordendlern B-LOC
+" O
+hat O
+der O
+Vorstand O
+des O
+Karneval-Clubs O
+ausgeschrieben O
+. O

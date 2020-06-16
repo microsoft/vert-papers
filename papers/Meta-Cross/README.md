@@ -45,7 +45,10 @@ Prepare the preprocessed data to `data/${language}`.
 We use the BIO tagging scheme and NER data in the following format:
 
 ```txt
-Peter B-PER Blackburn I-PER BRUSSELS B-LOC 1996-08-22 O
+Peter B-PER
+Blackburn I-PER
+BRUSSELS B-LOC
+1996-08-22 O
 ```
 
 We take English as the source language in our approach.
@@ -82,20 +85,25 @@ We use the following widely-used benchmark datasets for experiments:
 
 All datasets are annotated with 4 entity types: LOC, MISC, ORG, and PER. Each dataset is split into training, dev, and test sets.
 
+All datasets are CoNLL-style and BIO tagging scheme.
+In this repo, we only public some sample of this corpus.
+You can download they from the websites [CoNLL-2003](http://www.cnts.ua.ac.be/conll2003/ner.tgz), [CoNLL-2002](http://www.cnts.ua.ac.be/conll2002/ner.tgz), [Europeana Newspapers French NER](https://github.com/EuropeanaNewspapers/ner-corpora).
+And put they to the file path `data/${language}/${train_type}.txt`.
+
 ## 📋 Results
 
 We reports the zero-resource cross-lingual NER results of the proposed UniTrans on the 5 target languages, alongside those reported by prior state-of-the-art methods.
 
-|                                                                                  | es        | nl        | de        | fr        | zh        | Average   |
-| -------------------------------------------------------------------------------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| [Tackstrom _et_ _al_.[2012]](https://www.aclweb.org/anthology/N12-1052/)         | 59.30     | 58.40     | 40.40     | -         | -         | -         |
-| [Tsai _et_ _al_.[2016]](https://www.aclweb.org/anthology/K16-1022/)              | 60.55     | 61.56     | 48.12     | -         | -         | -         |
-| [Ni _et_ _al_.[2017]](https://www.aclweb.org/anthology/P17-1135/)                | 65.10     | 65.40     | 58.50     | -         | -         | -         |
-| [Mayhew _et_ _al_.[2017]](https://www.aclweb.org/anthology/D17-1269/)            | 65.95     | 66.50     | 59.11     | -         | -         | -         |
-| [Xie _et_ _al_.[2018]](https://www.aclweb.org/anthology/D18-1034/)               | 72.37     | 71.25     | 57.76     | -         | -         | -         |
-| [Wu and Dredze [2019]](https://www.aclweb.org/anthology/D19-1077/)               | 74.96     | 77.57     | 69.56     | -         | -         | -         |
-| Base Model                                                                       | 74.59     | 79.57     | 70.79     | 50.89     | 76.42     | 70.45     |
-| **Meta-Cross**                                                                   | **76.75** | **80.44** | **73.16** | **55.30** | **77.89** | **72.71** |
+|                                                                          | es        | nl        | de        | fr        | zh        | Average   |
+| ------------------------------------------------------------------------ | --------- | --------- | --------- | --------- | --------- | --------- |
+| [Tackstrom _et_ _al_.[2012]](https://www.aclweb.org/anthology/N12-1052/) | 59.30     | 58.40     | 40.40     | -         | -         | -         |
+| [Tsai _et_ _al_.[2016]](https://www.aclweb.org/anthology/K16-1022/)      | 60.55     | 61.56     | 48.12     | -         | -         | -         |
+| [Ni _et_ _al_.[2017]](https://www.aclweb.org/anthology/P17-1135/)        | 65.10     | 65.40     | 58.50     | -         | -         | -         |
+| [Mayhew _et_ _al_.[2017]](https://www.aclweb.org/anthology/D17-1269/)    | 65.95     | 66.50     | 59.11     | -         | -         | -         |
+| [Xie _et_ _al_.[2018]](https://www.aclweb.org/anthology/D18-1034/)       | 72.37     | 71.25     | 57.76     | -         | -         | -         |
+| [Wu and Dredze [2019]](https://www.aclweb.org/anthology/D19-1077/)       | 74.96     | 77.57     | 69.56     | -         | -         | -         |
+| Base Model                                                               | 74.59     | 79.57     | 70.79     | 50.89     | 76.42     | 70.45     |
+| **Meta-Cross**                                                           | **76.75** | **80.44** | **73.16** | **55.30** | **77.89** | **72.71** |
 
 ## Contributing
 
