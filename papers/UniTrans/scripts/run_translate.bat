@@ -3,7 +3,7 @@ set SRC_LANG=en
 set TGT_LANGS=de
 set EMB_PATH=data/embedding
 set DICT_PATH=data/dict
-set DATA_DIR=data/ner/conll
+set DATA_DIR=data\ner\conll
 
 for %%t in (%TGT_LANGS%) do (
 python MUSE\supervised.py --src_lang %SRC_LANG% --tgt_lang %%t ^
