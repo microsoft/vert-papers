@@ -78,7 +78,7 @@ We use the following widely-used benchmark datasets for experiments:
 - CoNLL-2002 [Tjong Kim Sang, 2002](https://www.aclweb.org/anthology/W02-2024/) for Spanish [es] and Dutch [nl] NER;
 - CoNLL-2003 [Tjong Kim Sang and De Meulder, 2003](https://www.aclweb.org/anthology/W03-0419/) for English [en] and German [de] NER;
 - Europeana Newspapers French NER [Neudecker, 2016](https://www.aclweb.org/anthology/L16-1689/) for French [fr];
-- MSRA Chinese NER [Cao et al. 2018](https://www.aclweb.org/anthology/D18-1017/) for Chinese [zh].
+- MSRA Chinese NER [Levow et al. 2006](https://www.aclweb.org/anthology/W06-0115/) for Chinese [zh].
 
 All datasets are annotated with 4 entity types: LOC, MISC, ORG, and PER. Each dataset is split into training, dev, and test sets.
 
@@ -94,7 +94,6 @@ We reports the zero-resource cross-lingual NER results of the proposed UniTrans 
 | [Mayhew _et_ _al_.[2017]](https://www.aclweb.org/anthology/D17-1269/)            | 65.95     | 66.50     | 59.11     | -         | -         | -         |
 | [Xie _et_ _al_.[2018]](https://www.aclweb.org/anthology/D18-1034/)               | 72.37     | 71.25     | 57.76     | -         | -         | -         |
 | [Wu and Dredze [2019]](https://www.aclweb.org/anthology/D19-1077/)               | 74.96     | 77.57     | 69.56     | -         | -         | -         |
-| [Wu _et_ _al_.[2019]](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-WuQ.5015.pdf) | 76.75     | 80.44     | 73.16     | -         | -         | -         |
 | Base Model                                                                       | 74.59     | 79.57     | 70.79     | 50.89     | 76.42     | 70.45     |
 | **Meta-Cross**                                                                   | **76.75** | **80.44** | **73.16** | **55.30** | **77.89** | **72.71** |
 
