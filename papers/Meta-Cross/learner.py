@@ -12,7 +12,7 @@ import  torch, os, numpy, json, time
 
 class Learner(nn.Module):
     def __init__(self, bert_model, label_list, freeze_layer, logger, lr_meta, lr_inner,
-                 warmup_prop_meta, warmup_prop_inner, max_meta_steps, model_dir='', cache_dir='', gpu_no=0):
+                 warmup_prop_meta, warmup_prop_inner, max_meta_steps, model_dir='', cache_dir='', gpu_no=0, py_alias="python"):
 
         super(Learner, self).__init__()
 
@@ -24,6 +24,7 @@ class Learner(nn.Module):
 
         self.bert_model = bert_model
         self.label_list = label_list
+        self.py_alias = py_alias
 
         num_labels = len(label_list) + 1
 
@@ -238,7 +239,7 @@ class Learner(nn.Module):
         tmp_fn = '{}/{}-{}_pred.txt'.format(result_dir, lang, mode)
         score_fn = '{}/{}-{}_score.txt'.format(result_dir, lang, mode)
         self.write_result(words, y_true, y_pred, tmp_fn)
-        os.system('python %s < %s > %s' % ('conlleval.py', tmp_fn, score_fn))
+        os.system('%s %s < %s > %s' % (self.py_alias, 'conlleval.py', tmp_fn, score_fn))
 
         F1 = -1
         with open(score_fn, 'r', encoding='utf-8') as fr:
@@ -297,7 +298,7 @@ class Learner(nn.Module):
         tmp_fn = '{}/{}-{}_pred.txt'.format(result_dir, lang, mode)
         score_fn = '{}/{}-{}_score.txt'.format(result_dir, lang, mode)
         self.write_result(words, y_true, y_pred, tmp_fn)
-        os.system('python %s < %s > %s' % ('conlleval.py', tmp_fn, score_fn))
+        os.system('%s %s < %s > %s' % (self.py_alias, 'conlleval.py', tmp_fn, score_fn))
 
         F1 = -1
         with open(score_fn, 'r', encoding='utf-8') as fr:

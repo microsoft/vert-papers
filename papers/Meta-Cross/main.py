@@ -24,7 +24,7 @@ def train_NOmeta(args):
                              compute_repr=False, shuffle=False)
     # build the model
     learner = Learner(args.bert_model, corpus_en_train.label_list, args.freeze_layer, logger, args.lr_meta, args.lr_inner,
-                      args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps).to(device)
+                      args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps, py_alias=args.py_alias).to(device)
 
 
     t = time.time()
@@ -67,7 +67,7 @@ def train_meta(args):
 
 
     learner = Learner(args.bert_model, corpus_en_train.label_list, args.freeze_layer, logger, args.lr_meta, args.lr_inner,
-                      args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps).to(device)
+                      args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps, py_alias=args.py_alias).to(device)
 
     t = time.time()
     best_en_valid_F1 = -1.0
@@ -112,7 +112,7 @@ def zero_shot_NOmeta(args):
     # build the model
     learner = Learner(args.bert_model, LABEL_LIST, args.freeze_layer, logger, lr_meta=0, lr_inner=0,
                       warmup_prop_meta=-1, warmup_prop_inner=-1, max_meta_steps=-1,
-                      model_dir=args.model_dir, gpu_no=args.gpu_device).to(device)
+                      model_dir=args.model_dir, gpu_no=args.gpu_device, py_alias=args.py_alias).to(device)
 
     languages = args.test_langs
     F1s = {lang: [] for lang in languages}
@@ -149,7 +149,7 @@ def zero_shot_meta(args):
 
     learner = Learner(args.bert_model, LABEL_LIST, args.freeze_layer, logger, args.lr_meta,
                       args.lr_inner, args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps,
-                      model_dir=args.model_dir, gpu_no=args.gpu_device).to(device)
+                      model_dir=args.model_dir, gpu_no=args.gpu_device, py_alias=args.py_alias).to(device)
 
     languages = args.test_langs
     F1s = {lang: [] for lang in languages}
@@ -183,7 +183,7 @@ def k_shot(args):
 
     learner_pretrained = Learner(args.bert_model, LABEL_LIST, args.freeze_layer, logger, lr_meta=0, lr_inner=0,
                                  warmup_prop_meta=-1, warmup_prop_inner=-1, max_meta_steps=-1,
-                                 model_dir=args.model_dir, gpu_no=args.gpu_device).to(device)
+                                 model_dir=args.model_dir, gpu_no=args.gpu_device, py_alias=args.py_alias).to(device)
 
     languages = args.test_langs
     F1s = {lang: [] for lang in languages}
@@ -235,7 +235,7 @@ def supervised_NOmeta(args):
                              compute_repr=False, shuffle=False)
     # build the model
     learner = Learner(args.bert_model, corpus_train.label_list, args.freeze_layer, logger, args.lr_meta, args.lr_inner,
-                      args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps).to(device)
+                      args.warmup_prop_meta, args.warmup_prop_inner, args.max_meta_steps, py_alias=args.py_alias).to(device)
 
 
     t = time.time()
@@ -316,6 +316,7 @@ if __name__ == '__main__':
     # expt setting
     parser.add_argument('--seed', type=int, help='random seed to reproduce the result.', default=667)
     parser.add_argument('--gpu_device', type=int, help='GPU device num', default=0)
+    parser.add_argument('--py_alias', type=str, help='python alias', default='python')
 
     args = parser.parse_args()
 
