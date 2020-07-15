@@ -1,0 +1,46 @@
+-DOCSTART- O
+
+Ereignis O
+und O
+Erzählung O
+oder O
+: O
+
+Schwierigkeiten O
+beim O
+nachvollziehenden O
+Verstehen O
+Albrecht B-PER
+Lehmann I-PER
+läßt O
+Flüchtlinge O
+und O
+Vertriebene O
+in O
+Westdeutschland B-LOC
+, O
+1945-1990 O
+, O
+zu O
+Wort O
+kommen O
+
+Diskussionen O
+über O
+Asylbewerber- O
+, O
+Aussiedler- O
+und O
+Einwanderungsfragen O
+haben O
+in O
+Deutschland B-LOC
+in O
+den O
+letzten O
+Monaten O
+Politik O
+und O
+Medien O
+beherrscht O
+. O

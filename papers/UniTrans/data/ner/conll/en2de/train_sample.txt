@@ -1,0 +1,48 @@
+-DOCSTART- O
+
+EU B-ORG
+lehnt O
+Deutsche B-MISC
+call O
+zu O
+boykott O
+britische B-MISC
+lamm O
+. O
+
+Peter B-PER
+Blackburn I-PER
+
+BRÜSSEL B-LOC
+1996-08-22 O
+
+der O
+europäischen B-ORG
+Commission I-ORG
+sagte O
+auf O
+Donnerstag O
+es O
+geäußert O
+mit O
+deutsche B-MISC
+Ratschläge O
+zu O
+verbraucher O
+zu O
+shun O
+britische B-MISC
+lamm O
+bis O
+wissenschaftlern O
+ermitteln O
+Ob O
+mad O
+kuh O
+infektionskrankheit O
+kann O
+werden O
+übertragen O
+zu O
+Schafe O
+. O

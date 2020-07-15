@@ -1,0 +1,48 @@
+-DOCSTART- O
+
+UE B-ORG
+rechaza O
+Alemán B-MISC
+llamar O
+a O
+boicot O
+Británico B-MISC
+cordero O
+. O
+
+Peter B-PER
+Blackburn I-PER
+
+BRUSELAS B-LOC
+1996-08-22 O
+
+El O
+Europeo B-ORG
+Comisión I-ORG
+dijo O
+en O
+Miércoles O
+este O
+argumentaron O
+con O
+Alemán B-MISC
+aconsejar O
+a O
+consumidores O
+a O
+shun O
+Británico B-MISC
+cordero O
+hasta O
+científicos O
+determinar O
+si O
+mad O
+vaca O
+enfermedad O
+puede O
+ser O
+transmitidas O
+a O
+ovejas O
+. O

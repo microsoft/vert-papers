@@ -1,0 +1,10 @@
+seqeval
+tensorboardX
+boto3
+requests
+tqdm
+regex
+sacremoses
+sentencepiece
+torch
+numpy
