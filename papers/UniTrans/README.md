@@ -1,33 +1,34 @@
-# UniTrans : Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data
+# UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data
 
-This repository is the official implementation of
+This repository contains the open-sourced official implementation of the paper:
 
-[UniTrans : Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.microsoft.com/en-us/research/publication/unitrans-unifying-model-transfer-and-data-transfer-for-cross-lingual-named-entity-recognition-with-unlabeled-data/) (IJCAI 2020).  
+[UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.microsoft.com/en-us/research/publication/unitrans-unifying-model-transfer-and-data-transfer-for-cross-lingual-named-entity-recognition-with-unlabeled-data/) (IJCAI 2020).  
 _Qianhui Wu, Zijia Lin, Börje Karlsson, Biqing Huang and Jian-Guang Lou_
 
-If you find this repo helpful, please cite the following:
+If you find this repo helpful, please cite the following paper:
 
 ```tex
-@article{wu2020unitrans,
+@inproceedings{wu2020unitrans,
     title={UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data},
-    author={Wu, Qianhui and Lin, Zijia and Karlsson, Börje and Huang, Biqing and Lou, Jian-Guang},
+    author={Qianhui Wu and Zijia Lin and B{\"{o}}rje F. Karlsson and Biqing Huang and Jian-Guang Lou},
     year={2020},
-    month={July},
-    journal={29th International Joint Conference on Artificial Intelligence (IJCAI 2020)},
+    booktitle={29th International Joint Conference on Artificial Intelligence (IJCAI 2020)},
     url={https://www.microsoft.com/en-us/research/publication/unitrans-unifying-model-transfer-and-data-transfer-for-cross-lingual-named-entity-recognition-with-unlabeled-data/},
 }
 ```
 
-For any question, please feel free to post Github issues.
+For any questions/comments, please feel free to open GitHub issues.
+
 
 ## 🎥 Overview
 
-In this paper, we propose a novel approach for cross-lingual NER termed UniTrans, which uniﬁes both model transfer and data transfer based on their complementarity, and leverages beneﬁcial information from unlabeled target-language data via knowledge distillation.
+In this paper, we propose a novel approach for cross-lingual NER termed UniTrans, which uniﬁes both model-transfer and data-transfer approaches based on their complementarity, and further leverages beneﬁcial information from unlabeled target-language data via knowledge distillation.
 We also propose a voting scheme to generate pseudo hard labels for part of words in the unlabeled target-language data, so as to enhance knowledge distillation with supervision from both hard and soft labels. We evaluate the proposed UniTrans on benchmark datasets for four target languages.
 Experimental results show that UniTrans achieves new state-of-the-art performance for all target languages.
 We also extend UniTrans with teacher ensembling, which leads to further performance gains.
 
 ![image](https://cdn.nlark.com/yuque/0/2020/png/104214/1591779090520-ae3107ed-97a3-4d35-8173-40aa469141a7.png)
+
 
 ## 🎯 Quick Start
 
@@ -44,11 +45,12 @@ Other pip package show in `requirements.txt`.
 pip3 install -r requirements.txt
 ```
 
-The code may work on other python and pytorch version. However, we ran experiments in the above environment.
+The code may work on other python and pytorch version. However, all experiments were run in the above environment.
+
 
 ### Train and Evaluate
 
-For _Linux_ severs,
+For _Linux_ machines,
 
 ```bash
 # Generation tgt translated datasets from src dataset
@@ -61,7 +63,7 @@ bash scripts/run_src.sh
 bash scripts/run_tgt.sh
 ```
 
-For _Windows_ severs,
+For _Windows_ machines,
 
 ```cmd
 <!--  Generation tgt translated datasets from src dataset  -->
@@ -74,15 +76,16 @@ call scripts\run_src.bat
 call scripts\run_tgt.bat
 ```
 
-before generation the translation dataset, you need have the embeddings file and dictionaries follow with that steps.
+Before generating the translation dataset, you need to have the embeddings file and dictionaries following these steps:
 
 1. Translate source-language labeled data.
 2. Download [monolingual word embeddings](https://fasttext.cc/docs/en/pretrained-vectors.html) `wiki.language.vec` to `data/embedding`.
 3. Download [src-tgt test dictionaries](https://github.com/facebookresearch/MUSE) for evaluation (English to other languages) to `data/dict`.
 
+
 ## 🍯 Datasets
 
-We use the following widely-used benchmark datasets for experiments:
+We use the following widely-used benchmark datasets for the experiments:
 
 - CoNLL-2002 [Tjong Kim Sang, 2002](https://www.aclweb.org/anthology/W02-2024/) for Spanish [es] and Dutch [nl] NER;
 - CoNLL-2003 [Tjong Kim Sang and De Meulder, 2003](https://www.aclweb.org/anthology/W03-0419/) for English [en] and German [de] NER;
@@ -90,14 +93,13 @@ We use the following widely-used benchmark datasets for experiments:
 
 All datasets are annotated with 4 entity types: LOC, MISC, ORG, and PER. Each dataset is split into training, dev, and test sets.
 
-All datasets are CoNLL-style and BIO tagging scheme.
-In this repo, we only public some sample of this corpus.
-You can download they from the websites [CoNLL-2003](http://www.cnts.ua.ac.be/conll2003/ner.tgz), [CoNLL-2002](http://www.cnts.ua.ac.be/conll2002/ner.tgz), and [NoDaLiDa-2019](https://github.com/ljos/navnkjenner).
-And put they to the file path `data/conll/ner/${language}/${train_type}.txt`.
+All datasets are CoNLL-style and BIO tagging scheme.In this repo, we only publish a small data sample to validate the code. You can download them from their respective websites: [CoNLL-2003](http://www.cnts.ua.ac.be/conll2003/ner.tgz), [CoNLL-2002](http://www.cnts.ua.ac.be/conll2002/ner.tgz), and [NoDaLiDa-2019](https://github.com/ljos/navnkjenner).
+And place them in the correct locations: `data/conll/ner/${language}/${train_type}.txt`.
+
 
 ## 📋 Results
 
-We reports the zero-resource cross-lingual NER results of the proposed UniTrans on the 4 target languages, alongside those reported by prior state-of-the-art methods and those of two re-implemented baseline methods, i.e., Model Transfer and Data Transfer.
+We report the zero-resource cross-lingual NER results of the proposed UniTrans on the 4 target languages, alongside those reported by prior state-of-the-art methods and those of two re-implemented baseline methods, i.e., Model Transfer and Data Transfer.
 
 |                                                                                  | es        | nl        | de        | no        | Average   |
 | -------------------------------------------------------------------------------- | --------- | --------- | --------- | --------- | --------- |
@@ -113,6 +115,7 @@ We reports the zero-resource cross-lingual NER results of the proposed UniTrans 
 | Model Transfer (reimp.)                                                          | 76.34     | 80.61     | 72.39     | 78.47     | 76.95     |
 | Data Transfer (reimp.)                                                           | 78.14     | 80.98     | 73.65     | 78.91     | 77.92     |
 | **UniTrans**                                                                     | **79.31** | **82.90** | **74.82** | **81.17** | **79.55** |
+
 
 ## Contributing
 
