@@ -137,7 +137,7 @@ Our model achieves the following performance results on the four datasets:
 | [Zhang and Yang [2018]1](https://www.aclweb.org/anthology/P18-1144/)     | 94.53      | 94.29      | 94.41      | 
 | [Zhang and Yang [2018]2](https://www.aclweb.org/anthology/P18-1144/)     | 94.07      | 94.42      | 94.24      | 
 | [Zhang and Yang [2018]3](https://www.aclweb.org/anthology/P18-1144/)     | 94.81      | 94.11      | 94.46      | 
-| ------------------------------------------------------------------------ | ---------- | ---------- | ---------- |
+| <hr> | <hr> | <hr> | <hr> |
 | Baseline                                                                 | 93.71      | 93.74      | 93.73      | 
 | Baseline + CNN                                                           | 94.36      | **94.85**  | 94.60      | 
 | **CAN-NER**                                                              | **95.05**  | **94.82*   | **94.94**  | 
@@ -154,7 +154,7 @@ Our model achieves the following performance results on the four datasets:
 | [He and Sun [2017]b](https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14484) | 54.50      | 62.17      | 58.23      | 
 | [Cao et al. [2018]](https://www.aclweb.org/anthology/P18-1144/)                   | 54.34      | 57.35      | 58.70      | 
 | [Zhang and Yang [2018]](https://www.aclweb.org/anthology/P18-1144/)               | 53.04      | 62.25      | 58.79      | 
-| --------------------------------------------------------------------------------- | ---------- | ---------- | ---------- |
+| <hr> | <hr> | <hr> | <hr> |
 | Baseline                                                                          | 49.02      | 58.80      | 53.80      | 
 | Baseline + CNN                                                                    | 53.86      | 58.05      | 55.91      | 
 | **CAN-NER**                                                                       | **55.38**  | **62.98**  | **59.31**  | 
@@ -164,12 +164,12 @@ Our model achieves the following performance results on the four datasets:
 | Model                                                                                      | P          | R          | F1         | 
 | ------------------------------------------------------------------------------------------ | ---------- | ---------- | ---------- |
 | [Yang et al. [2016]](https://arxiv.org/abs/1708.07279)                                     | 65.59      | 71.84      | 68.57      | 
-| [Yang et al. [2016]1](https://arxiv.org/abs/1708.07279)                                    | 72.98      | **80.15**  | **76.40**  | 
-| [Che et al. [2013]1(https://www.aclweb.org/anthology/N13-1006/)                            | **77.71**  | 72.51      | 75.02      | 
-| [Wang et al. [2013]1](https://www.aaai.org/ocs/index.php/AAAI/AAAI13/paper/viewPaper/6346) | 76.43      | 72.32      | 74.32      | 
-| [Zhang and Yang [2018]2](https://www.aclweb.org/anthology/P18-1144/)                       | 76.35      | 71.56      | 73.88      | 
-| [Zhang and Yang [2018]3](https://www.aclweb.org/anthology/P18-1144/)                       | 74.36      | 69.43      | 71.81      | 
-| ------------------------------------------------------------------------------------------ | ---------- | ---------- | ---------- |
+| [Yang et al. [2016]](https://arxiv.org/abs/1708.07279)1                                    | 72.98      | **80.15**  | **76.40**  | 
+| [Che et al. [2013]](https://www.aclweb.org/anthology/N13-1006/)1                           | **77.71**  | 72.51      | 75.02      | 
+| [Wang et al. [2013]](https://www.aaai.org/ocs/index.php/AAAI/AAAI13/paper/viewPaper/6346)1 | 76.43      | 72.32      | 74.32      | 
+| [Zhang and Yang [2018]](https://www.aclweb.org/anthology/P18-1144/)2                       | 76.35      | 71.56      | 73.88      | 
+| [Zhang and Yang [2018]](https://www.aclweb.org/anthology/P18-1144/)3                       | 74.36      | 69.43      | 71.81      | 
+| <hr> | <hr> | <hr> | <hr> |
 | Baseline                                                                                   | 70.67      | 71.64      | 71.15      | 
 | Baseline + CNN                                                                             | 72.69      | 71.51      | 72.10      | 
 | **CAN-NER**                                                                                | *75.05*    | *72.29*    | *73.64*    | 
@@ -181,14 +181,14 @@ Our model achieves the following performance results on the four datasets:
 | Model                                                                                      | P          | R          | F1         | 
 | ------------------------------------------------------------------------------------------ | ---------- | ---------- | ---------- |
 | [Chen et al. [2006]](https://www.aclweb.org/anthology/W06-0130/)                           | 91.22      | 81.71      | 86.20      | 
-| [Zhang et al. [2006]1](https://www.aclweb.org/anthology/W06-0126/)                         | 92.20      | 90.18      | 91.18      | 
+| [Zhang et al. [2006]](https://www.aclweb.org/anthology/W06-0126/)1                         | 92.20      | 90.18      | 91.18      | 
 | [Zhou et al. [2013]](http://www.ejournal.org.cn/Jweb_cje/CN/abstract/abstract7635.shtml)   | 91.86      | 88.75      | 90.28      | 
 | [Lu et al. [2016]](https://www.aclweb.org/anthology/L16-1138/)                             | -          | -          | 87.94      | 
 | [Dong et al. [2016]](https://link.springer.com/chapter/10.1007/978-3-319-50496-4_20)       | 91.28      | 90.62      | 90.95      | 
 | [Cao et al. [2018]](https://www.aclweb.org/anthology/P18-1144/)                            | 91.30      | 89.58      | 90.64      | 
 | [Yang et al. [2018]](https://link.springer.com/chapter/10.1007/978-3-319-99495-6_16)       | 92.04      | 91.31      | 91.67      | 
-| [Zhang and Yang [2018]2](https://www.aclweb.org/anthology/P18-1144/)                       | **93.57**  | **92.79**  | **93.18**  | 
-| ------------------------------------------------------------------------------------------ | ---------- | ---------- | ---------- |
+| [Zhang and Yang [2018]](https://www.aclweb.org/anthology/P18-1144/)2                       | **93.57**  | **92.79**  | **93.18**  | 
+| <hr> | <hr> | <hr> | <hr> |
 | Baseline                                                                                   | 92.54      | 88.20      | 90.32      | 
 | Baseline + CNN                                                                             | 92.57      | 92.11      | 92.34      | 
 | **CAN-NER**                                                                                | **93.53**  | *92.42*    | **92.97**  | 
