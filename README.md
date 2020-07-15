@@ -2,7 +2,7 @@ This repository contains code and datasets related to entity/knowledge papers fr
 
 # Recent Papers:
 
-* UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data (*coming soon*), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020.
+* [UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.ijcai.org/Proceedings/2020/543), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020.
 * [Single-/Multi-Source Cross-Lingual NER via Teacher-Student Learning on Unlabeled Data in Target Language](https://arxiv.org/abs/2004.12440), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Jian-Guang Lou, Biqing Huang*, ACL 2020.
 * [Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources](https://arxiv.org/abs/1911.06161), *Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin*, AAAI 2020.
 * [Improving Entity Linking by Modeling Latent Entity Type Information](https://arxiv.org/abs/2001.01447), *Shuang Chen, Jinpeng Wang, Feng Jiang, Chin-Yew Lin*, AAAI 2020.
