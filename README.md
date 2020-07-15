@@ -2,13 +2,13 @@ This repository contains code and datasets related to entity/knowledge papers fr
 
 # Recent Papers:
 
-* [UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.ijcai.org/Proceedings/2020/543), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020.
-* [Single-/Multi-Source Cross-Lingual NER via Teacher-Student Learning on Unlabeled Data in Target Language](https://arxiv.org/abs/2004.12440), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Jian-Guang Lou, Biqing Huang*, ACL 2020.
-* [Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources](https://arxiv.org/abs/1911.06161), *Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin*, AAAI 2020.
+* [UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.ijcai.org/Proceedings/2020/543), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/UniTrans**
+* [Single-/Multi-Source Cross-Lingual NER via Teacher-Student Learning on Unlabeled Data in Target Language](https://arxiv.org/abs/2004.12440), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Jian-Guang Lou, Biqing Huang*, ACL 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/SingleMulti-TS**
+* [Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources](https://arxiv.org/abs/1911.06161), *Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin*, AAAI 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/Meta-Cross**
 * [Improving Entity Linking by Modeling Latent Entity Type Information](https://arxiv.org/abs/2001.01447), *Shuang Chen, Jinpeng Wang, Feng Jiang, Chin-Yew Lin*, AAAI 2020.
-* [Towards Improving Neural Named Entity Recognition with Gazetteers](https://www.aclweb.org/anthology/P19-1524/), *Tianyu Liu, Jin-Ge Yao, Chin-Yew Lin*, ACL 2019.
-* [CAN-NER: Convolutional Attention Network for Chinese Named Entity Recognition](https://arxiv.org/abs/1904.02141), *Yuying Zhu, Guoxin Wang, Börje F. Karlsson*, NAACL-HLT 2019.
-* [GRN: Gated Relation Network to Enhance Convolutional Neural Network for Named Entity Recognition](https://arxiv.org/abs/1907.05611), *Hui Chen, Zijia Lin, Guiguang Ding, Jian-Guang Lou, Yusen Zhang, Börje F. Karlsson*, AAAI 2019.
+* [Towards Improving Neural Named Entity Recognition with Gazetteers](https://www.aclweb.org/anthology/P19-1524/), *Tianyu Liu, Jin-Ge Yao, Chin-Yew Lin*, ACL 2019. <br>Repository: **https://github.com/lyutyuh/acl19_subtagger**
+* [CAN-NER: Convolutional Attention Network for Chinese Named Entity Recognition](https://arxiv.org/abs/1904.02141), *Yuying Zhu, Guoxin Wang, Börje F. Karlsson*, NAACL-HLT 2019. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/CAN-NER**
+* [GRN: Gated Relation Network to Enhance Convolutional Neural Network for Named Entity Recognition](https://arxiv.org/abs/1907.05611), *Hui Chen, Zijia Lin, Guiguang Ding, Jian-Guang Lou, Yusen Zhang, Börje F. Karlsson*, AAAI 2019. <br>Repository: **https://github.com/HuiChen24/NER-GRN**
 
 # Related Software:
 
