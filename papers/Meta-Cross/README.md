@@ -8,13 +8,14 @@ _Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang,
 If you find this repo helpful, please cite the following paper:
 
 ```tex
-@article{wu2019metacross,
-    title={Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources},
-    author={Wu, Qianhui and Lin, Zijia and Wang, Guoxin and Chen, Hui and Karlsson, Börje and Huang, Biqing and Lin, Chin-Yew},
-    year={2020},
-    month={February},
-    journal={AAAI 2020},
-    url={https://www.microsoft.com/en-us/research/publication/enhanced-meta-learning-for-cross-lingual-named-entity-recognition-with-minimal-resources/},
+@inproceedings{wu2019metacross,
+  author    = {Qianhui Wu and Zijia Lin and Guoxin Wang and Hui Chen and B{\"{o}}rje F. Karlsson and Biqing Huang and Chin{-}Yew Lin},
+  title     = {Enhanced Meta-Learning for Cross-Lingual Named Entity Recognition with Minimal Resources},
+  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI} 2020},
+  pages     = {9274--9281},
+  publisher = {{AAAI} Press},
+  year      = {2020},
+  url       = {https://www.microsoft.com/en-us/research/publication/enhanced-meta-learning-for-cross-lingual-named-entity-recognition-with-minimal-resources/},
 }
 ```
 
