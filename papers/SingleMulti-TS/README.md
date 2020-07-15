@@ -84,7 +84,9 @@ And place them in the correct locations: `data/conll/ner/${language}/${train_typ
 
 ## 📋 Results
 
-We report the zero-resource cross-lingual NER results of the proposed UniTrans on the 3 target languages, alongside those reported by prior state-of-the-art methods.
+We report the zero-resource cross-lingual NER results of the proposed Single/Multi-TS approach on the 3 target languages, alongside those reported by prior state-of-the-art methods.
+
+* Performance comparisons on Single-Source:
 
 |                                                                                  | es        | nl        | de        |
 | -------------------------------------------------------------------------------- | --------- | --------- | --------- |
@@ -96,7 +98,17 @@ We report the zero-resource cross-lingual NER results of the proposed UniTrans o
 | [Wu and Dredze [2019]](https://www.aclweb.org/anthology/D19-1077/)               | 74.50     | 79.50     | 71.10     |
 | [Moon _et_ _al_.[2019]](https://arxiv.org/abs/1912.01389)                        | 75.67     | 80.38     | 71.42     |
 | [Wu _et_ _al_.[2019]](https://www.aaai.org/Papers/AAAI/2020GB/AAAI-WuQ.5015.pdf) | 76.75     | 80.44     | 73.16     |
-| **Single/Multi-TS**                                                              | **76.94** | **80.89** | **73.22** |
+| **Single-TS**                                                                    | **76.94** | **80.89** | **73.22** |
+
+* Performance comparisons on Multi-Source:
+
+|                                                                                  | es        | nl        | de        |
+| -------------------------------------------------------------------------------- | --------- | --------- | --------- |
+| [Tackstrom _et_ _al_.[2012]](https://www.aclweb.org/anthology/N12-1052/)         | 61.90     | 59.90     | 36.40     |
+| [Rahimi _et_ _al_.[2019]](https://www.aclweb.org/anthology/P19-1015/)            | 71.80     | 67.60     | 59.10     |
+| [Chen _et_ _al_.[2019]](https://www.aclweb.org/anthology/P19-1299/)              | 73.50     | 72.40     | 56.00     |
+| [Moon _et_ _al_.[2019]](https://arxiv.org/abs/1912.01389)                        | 76.53     | **83.35** | 72.44     |
+| **Multi-TS**                                                                     | **78.00** | 81.33     | **75.33** |
 
 
 ## Contributing
