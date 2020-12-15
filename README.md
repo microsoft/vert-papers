@@ -1,8 +1,8 @@
-This repository contains code, datasets, and paper links related to entity/knowledge papers from the VERT (**V**ersatile **E**ntity **R**ecognition & Disambiguation **T**oolkit) project, by the [Knowledge Computing](https://www.microsoft.com/en-us/research/group/knowledge-computing/) group at Microsoft Research Asia (MSRA).
+This repository contains code, datasets, and links related to entity/knowledge papers from the VERT (**V**ersatile **E**ntity **R**ecognition & Disambiguation **T**oolkit) project, by the [Knowledge Computing](https://www.microsoft.com/en-us/research/group/knowledge-computing/) group at Microsoft Research Asia (MSRA).
 
 # News:
 
-* 2020-Nov: The Linking Park system, developed in partnership between the Knowledge Computing group at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)!
+* 2020-Nov: The LinkingPark system, developed in partnership between the Knowledge Computing group at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)!
 
 # Recent Papers:
 
