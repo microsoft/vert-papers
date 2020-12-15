@@ -2,7 +2,7 @@ This repository contains code and datasets related to entity/knowledge papers fr
 
 # News:
 
-* 2020-Nov: The Linking Park system, developed in partnership between the Knowledge Computing at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)!
+* 2020-Nov: The Linking Park system, developed in partnership between the Knowledge Computing group at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)!
 
 # Recent Papers:
 
