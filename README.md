@@ -1,7 +1,12 @@
 This repository contains code and datasets related to entity/knowledge papers from the VERT (**V**ersatile **E**ntity **R**ecognition & Disambiguation **T**oolkit) project, by the [Knowledge Computing](https://www.microsoft.com/en-us/research/group/knowledge-computing/) group at Microsoft Research Asia (MSRA).
 
+# News:
+
+* 2020-Nov: The Linking Park system, developed in partnership between the Knowledge Computing at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)!
+
 # Recent Papers:
 
+* *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Andy Gordon, Chin-Yew Lin*. [LinkingPark: An integrated approach for Semantic Table Interpretation](http://ceur-ws.org/Vol-2775/paper7.pdf), Semantic Web Challenge on Tabular Data to Knowledge Graph Matching (SemTab 2020) at ISWC 2020.
 * [UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.ijcai.org/Proceedings/2020/543), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/UniTrans**
 * [Single-/Multi-Source Cross-Lingual NER via Teacher-Student Learning on Unlabeled Data in Target Language](https://arxiv.org/abs/2004.12440), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Jian-Guang Lou, Biqing Huang*, ACL 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/SingleMulti-TS**
 * [Enhanced Meta-Learning for Cross-lingual Named Entity Recognition with Minimal Resources](https://arxiv.org/abs/1911.06161), *Qianhui Wu, Zijia Lin, Guoxin Wang, Hui Chen, Börje F. Karlsson, Biqing Huang, Chin-Yew Lin*, AAAI 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/Meta-Cross**
