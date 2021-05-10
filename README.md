@@ -11,6 +11,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # Recent Papers:
 
+* AdvPicker: Effectively Leveraging Unlabeled Data via Adversarial Discriminator for Cross-Lingual NER, *Weile Chen, Huiqiang Jiang, Qianhui Wu, Börje F. Karlsson, Yi Guan*, ACL 2021. (accepted)
 * [LinkingPark: An integrated approach for Semantic Table Interpretation](http://ceur-ws.org/Vol-2775/paper7.pdf), *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Andy Gordon, Chin-Yew Lin*, Semantic Web Challenge on Tabular Data to Knowledge Graph Matching (SemTab 2020) at ISWC 2020.
 * [UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.ijcai.org/Proceedings/2020/543), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/UniTrans**
 * [Single-/Multi-Source Cross-Lingual NER via Teacher-Student Learning on Unlabeled Data in Target Language](https://arxiv.org/abs/2004.12440), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Jian-Guang Lou, Biqing Huang*, ACL 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/SingleMulti-TS**
