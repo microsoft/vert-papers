@@ -28,7 +28,6 @@ If you find this repo helpful, please cite either of the following versions of t
   pages     = {3384--3393},
   publisher = {Association for Computational Linguistics},
   year      = {2019},
-  url       = {https://www.microsoft.com/en-us/research/publication/enhanced-meta-learning-for-cross-lingual-named-entity-recognition-with-minimal-resources/},
 }
 ```
 
