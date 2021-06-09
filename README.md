@@ -19,7 +19,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 * [Improving Entity Linking by Modeling Latent Entity Type Information](https://arxiv.org/abs/2001.01447), *Shuang Chen, Jinpeng Wang, Feng Jiang, Chin-Yew Lin*, AAAI 2020.
 * [Towards Improving Neural Named Entity Recognition with Gazetteers](https://www.aclweb.org/anthology/P19-1524/), *Tianyu Liu, Jin-Ge Yao, Chin-Yew Lin*, ACL 2019. <br>Repository: **https://github.com/lyutyuh/acl19_subtagger**
 * [CAN-NER: Convolutional Attention Network for Chinese Named Entity Recognition](https://arxiv.org/abs/1904.02141), *Yuying Zhu, Guoxin Wang, Börje F. Karlsson*, NAACL-HLT 2019. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/CAN-NER**
-* [GRN: Gated Relation Network to Enhance Convolutional Neural Network for Named Entity Recognition](https://arxiv.org/abs/1907.05611), *Hui Chen, Zijia Lin, Guiguang Ding, Jian-Guang Lou, Yusen Zhang, Börje F. Karlsson*, AAAI 2019. <br>Repository: **https://github.com/HuiChen24/NER-GRN**
+* [GRN: Gated Relation Network to Enhance Convolutional Neural Network for Named Entity Recognition](https://arxiv.org/abs/1907.05611), *Hui Chen, Zijia Lin, Guiguang Ding, Jian-Guang Lou, Yusen Zhang, Börje F. Karlsson*, AAAI 2019. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/GRN-NER**
 
 # Related Software:
 
