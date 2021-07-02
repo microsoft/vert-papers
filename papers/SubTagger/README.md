@@ -1,6 +1,24 @@
-# Soft Dictionary enhanced NER model
-## Towards Improving Neural Named Entity Recognition with Gazetteers
-https://www.aclweb.org/anthology/P19-1524
+# Towards Improving Neural Named Entity Recognition with Gazetteers
+
+This repository contains the open-sourced official implementation of our soft dictionary-enhanced NER model paper:
+
+[Towards Improving Neural Named Entity Recognition with Gazetteers](https://aclanthology.org/P19-1524/) (ACL 2019).  
+_Tianyu Liu, Jin-Ge Yao, and Chin-Yew Lin_
+
+If you find this repo helpful, please cite either of the following versions of the paper:
+```tex
+@inproceedings{liu-etal-2019-towards,
+    title = {Towards Improving Neural Named Entity Recognition with Gazetteers},
+    author = {Tianyu Liu and Jin-Ge Yao and Chin-Yew Lin},
+    booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+    year = 2019,
+    address = {Florence, Italy},
+    publisher = {Association for Computational Linguistics},
+    url = {https://aclanthology.org/P19-1524},
+    doi = {10.18653/v1/P19-1524},
+    pages = {5301--5307},
+}
+```
 
 ## Overall architecture
 <img src="fig/architecture.png" width="400">
@@ -9,7 +27,7 @@ https://www.aclweb.org/anthology/P19-1524
 
 First of all:
 ```bash
-   git clone https://github.com/lyutyuh/acl19_subtagger.git ; cd acl19_subtagger
+   git clone https://github.com/microsoft/vert-papers.git ; cd papers/SubTagger
 ```
 
 1. Create a virtual environment with Conda
