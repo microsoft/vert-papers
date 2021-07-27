@@ -6,13 +6,14 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # News:
 
-* 2021-May: **ReTraCk** has reached **\#1** in the [Generalizable Question Answering (GrailQA) leaderboard](https://dki-lab.github.io/GrailQA/) for knowledge base QA (KBQA).
+* 2021-May: [**ReTraCk**](https://github.com/microsoft/KC/tree/master/papers/ReTraCk) has reached **\#1** in the [Generalizable Question Answering (GrailQA) leaderboard](https://dki-lab.github.io/GrailQA/) for knowledge base QA (KBQA).
 * 2020-Dec: The [**Recognizers-Text** project](https://github.com/microsoft/Recognizers-Text) reached over **2 million** package downloads (across NuGet/npm/PyPI)! 
 * 2020-Nov: The [**LinkingPark**](https://www.microsoft.com/en-us/research/publication/linkingpark-an-integrated-approach-for-semantic-table-interpretation/) system, developed in partnership between the Knowledge Computing group at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the [SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)](https://www.cs.ox.ac.uk/isg/challenges/sem-tab/2020/results.html)!
 
 # Recent Papers:
 
-* [AdvPicker: Effectively Leveraging Unlabeled Data via Adversarial Discriminator for Cross-Lingual NER](https://arxiv.org/abs/2106.02300), *Weile Chen, Huiqiang Jiang, Qianhui Wu, Börje F. Karlsson, Yi Guan*, ACL 2021. (accepted) <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/AdvPicker**
+* [AdvPicker: Effectively Leveraging Unlabeled Data via Adversarial Discriminator for Cross-Lingual NER](https://arxiv.org/abs/2106.02300), *Weile Chen, Huiqiang Jiang, Qianhui Wu, Börje F. Karlsson, Yi Guan*, ACL 2021. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/AdvPicker**
+* [ReTraCk: A Flexible and Efficient Framework for Knowledge Base Question Answering](https://aclanthology.org/2021.acl-demo.39/), *Shuang Chen, Qian Liu, Zhiwei Yu, Chin-Yew Lin, Jian-Guang Lou, Feng Jiang*, ACL 2021. (demo paper) <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/ReTraCk**
 * [LinkingPark: An integrated approach for Semantic Table Interpretation](http://ceur-ws.org/Vol-2775/paper7.pdf), *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Andy Gordon, Chin-Yew Lin*, Semantic Web Challenge on Tabular Data to Knowledge Graph Matching (SemTab 2020) at ISWC 2020.
 * [UniTrans: Unifying Model Transfer and Data Transfer for Cross-Lingual Named Entity Recognition with Unlabeled Data](https://www.ijcai.org/Proceedings/2020/543), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Biqing Huang, Jian-Guang Lou*, IJCAI 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/UniTrans**
 * [Single-/Multi-Source Cross-Lingual NER via Teacher-Student Learning on Unlabeled Data in Target Language](https://arxiv.org/abs/2004.12440), *Qianhui Wu, Zijia Lin, Börje F. Karlsson, Jian-Guang Lou, Biqing Huang*, ACL 2020. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/SingleMulti-TS**
