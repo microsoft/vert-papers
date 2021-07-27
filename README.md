@@ -1,4 +1,4 @@
-This repository contains code, datasets, and links related to entity/knowledge papers from the **VERT** (**V**ersatile **E**ntity **R**ecognition & Disambiguation **T**oolkit) project, by the [Knowledge Computing (KC)](https://www.microsoft.com/en-us/research/group/knowledge-computing/) group at Microsoft Research Asia (MSRA).
+This repository contains code, datasets, and links related to entity/knowledge papers from the **VERT** (**V**ersatile **E**ntity **R**ecognition & Disambiguation **T**oolkit) project, by the [Knowledge Computing (**KC**)](https://www.microsoft.com/en-us/research/group/knowledge-computing/) group at Microsoft Research Asia (MSRA).
 
 Our group is hiring both research interns and full-time employees! If you are interest, please take a look at:
 * [Internship opportunities in KC](https://www.microsoft.com/en-us/research/uploads/prod/2020/12/kc_intern_job_description_2020.pdf) (PDF);
@@ -6,8 +6,9 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # News:
 
-* 2020-Dec: The [Recognizers-Text project](https://github.com/microsoft/Recognizers-Text) reached over **2 million** package downloads (across NuGet/npm/PyPI)! 
-* 2020-Nov: The [LinkingPark](https://www.microsoft.com/en-us/research/publication/linkingpark-an-integrated-approach-for-semantic-table-interpretation/) system, developed in partnership between the Knowledge Computing group at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the [SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)](https://www.cs.ox.ac.uk/isg/challenges/sem-tab/2020/results.html)!
+* 2021-May: **ReTraCk** has reached **\#1** in the [Generalizable Question Answering (GrailQA) leaderboard](https://dki-lab.github.io/GrailQA/) for knowledge base QA (KBQA).
+* 2020-Dec: The [**Recognizers-Text** project](https://github.com/microsoft/Recognizers-Text) reached over **2 million** package downloads (across NuGet/npm/PyPI)! 
+* 2020-Nov: The [**LinkingPark**](https://www.microsoft.com/en-us/research/publication/linkingpark-an-integrated-approach-for-semantic-table-interpretation/) system, developed in partnership between the Knowledge Computing group at MSRA and our collaborators in MSR Cambridge, has gotten 2nd place in the [SemTab 2020 challenge (Semantic Web Challenge on Tabular Data to Knowledge Graph Matching)](https://www.cs.ox.ac.uk/isg/challenges/sem-tab/2020/results.html)!
 
 # Recent Papers:
 
