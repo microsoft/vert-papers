@@ -1,0 +1,55 @@
+-DOCSTART- O
+Dat O
+is O
+in O
+Italië B-LOC
+, O
+Spanje B-LOC
+of O
+Engeland B-LOC
+misschien O
+geen O
+probleem O
+, O
+maar O
+volgens O
+' O
+Der B-PER
+Kaiser I-PER
+' O
+in O
+Duitsland B-LOC
+wel O
+. O
+
+sectie O
+
+Zürich B-LOC
+
+editie O
+
+De O
+' O
+kleine O
+' O
+clubs O
+, O
+waarvan O
+de O
+begroting O
+dikwijls O
+afhankelijk O
+is O
+van O
+opleiding O
+en O
+transfers O
+, O
+klagen O
+steen O
+en O
+been O
+over O
+dat O
+voornemen O
+. O
