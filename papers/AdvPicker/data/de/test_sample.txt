@@ -1,0 +1,42 @@
+-DOCSTART- O
+
+Parlament O
+ohne O
+Wiederrede O
+
+RODGAU B-LOC
+. O
+
+Die O
+Sitzung O
+der O
+Stadtverordnetenversammlung B-ORG
+von O
+Freitag O
+, O
+21. O
+August O
+1992 O
+, O
+im O
+Rathaus B-LOC
+zu O
+Jügesheim O
+wird O
+in O
+die O
+Geschichte O
+der O
+15 O
+Jahre O
+jungen O
+Stadt B-LOC
+Rodgau I-LOC
+als O
+die O
+erste O
+ohne O
+jede O
+Widerrede O
+eingehen O
+. O
