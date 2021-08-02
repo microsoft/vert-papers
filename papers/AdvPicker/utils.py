@@ -1,5 +1,5 @@
-# coding=utf-8
-# Refer to HuggingFace's transformers.
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 
 from __future__ import absolute_import, division, print_function
 
@@ -541,7 +541,7 @@ def convert_examples_to_features(
 
 
 def torch_device(gpu_id: int) -> torch.device:
-    """ allocation torch device """
+    """allocation torch device"""
     if gpu_id >= 0 and torch.cuda.is_available():
         torch.cuda.set_device(gpu_id)
         device = torch.device("cuda:{}".format(gpu_id))
@@ -552,7 +552,7 @@ def torch_device(gpu_id: int) -> torch.device:
 
 
 def mkdir(output_dir: str):
-    """ mkdir file dir"""
+    """mkdir file dir"""
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
 

@@ -1,4 +1,7 @@
 #!/bin/bash
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
 GPU_ID=0
 SEEDS=(320 550 631 691 985)
 TGTS=(de es nl)

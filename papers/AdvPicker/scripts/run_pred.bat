@@ -1,3 +1,6 @@
+: Copyright (c) Microsoft Corporation.
+: Licensed under the MIT license.
+
 : Step 1: Load Trained Models & Data Selection Results
 
 : Step 2: Prediction Cross-lingual Zero-shot NER in target languages

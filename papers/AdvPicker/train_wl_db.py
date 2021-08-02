@@ -1,5 +1,7 @@
-# apply gradient update on discriminator and generator
-# using different batch of data
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+# Apply gradient update on discriminator and generator
+# Using different batch of data
 
 import argparse
 import logging

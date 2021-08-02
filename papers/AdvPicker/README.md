@@ -28,7 +28,7 @@ For any questions/comments, please feel free to open GitHub issues.
 
 In this paper, we propose a novel adversarial approach (AdvPicker) to better leverage such data and further improve results in zero-shot cross-lingual NER task. We design an adversarial learning framework in which an encoder learns entity domain knowledge from labeled source-language data and better shared features are captured via adversarial training - where a discriminator selects less language-dependent target-language data via similarity to the source language. Experimental results on standard benchmark datasets well demonstrate that the proposed method beneﬁts strongly from this data selection process and outperforms existing state-of-the-art methods; without requiring any additional external resources (e.g., gazetteers or via machine translation).
 
-![image](https://cdn.nlark.com/yuque/0/2021/png/104214/1627717193323-ef3686c6-8bcc-4161-9231-37a83670bdea.png?x-oss-process=image%2Fresize%2Cw_1504)
+![image](./images/framework-v5.png)
 
 ## 🎯 Quick Start
 
@@ -60,9 +60,9 @@ For _Windows_ machines,
 call scripts\run.bat
 ```
 
-If you only want to predict in the trained model, you can get the model from [OneDrive](https://microsoftapc-my.sharepoint.com/:f:/g/personal/hjiang_microsoft_com/ErS3_cs5aQ5KjM-TvqqiM4UB-vEgemCwLFyQvcvz6_NChw?e=lobLbv) or [Baidu Pan(0lsc)](https://pan.baidu.com/s/1CmhbEanQBtmdVlRr9HAOXA).
+If you only want to predict in the trained model, you can get the model from [OneDrive](https://microsoftapc-my.sharepoint.com/:f:/g/personal/hjiang_microsoft_com/ErS3_cs5aQ5KjM-TvqqiM4UB-vEgemCwLFyQvcvz6_NChw?e=lobLbv).
 To easier to use and download, we only put one seed model in that.
-If you need all of models, you can download them from [OneDrive](https://microsoftapc-my.sharepoint.com/:f:/g/personal/hjiang_microsoft_com/Eloj7PaWT-VAqyP3D4B7GB8BvKIAJ-OlU1gs2wxUq_o2Fg?e=YZbd3H) or [Baidu Pan(rifg)](https://pan.baidu.com/s/1OXPbXkU7PfUCX3rplUZutQ).
+If you need all of models, you can download them from [OneDrive](https://microsoftapc-my.sharepoint.com/:f:/g/personal/hjiang_microsoft_com/Eloj7PaWT-VAqyP3D4B7GB8BvKIAJ-OlU1gs2wxUq_o2Fg?e=YZbd3H).
 Put the `result` folder in `papers/AdvPicker` directory.
 
 For _Linux_ machines,

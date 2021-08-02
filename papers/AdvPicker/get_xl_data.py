@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 import argparse
 import logging
 from itertools import cycle
@@ -7,7 +9,12 @@ from torch.nn import CrossEntropyLoss
 from torch.utils.data import ConcatDataset, DataLoader, TensorDataset
 from torch.utils.tensorboard import SummaryWriter
 
-from transformers import AdamW, BertTokenizer, XLMRobertaTokenizer, get_linear_schedule_with_warmup
+from transformers import (
+    AdamW,
+    BertTokenizer,
+    XLMRobertaTokenizer,
+    get_linear_schedule_with_warmup,
+)
 from utils import get_labels, load_and_cache_examples, mkdir, set_seed, torch_device
 
 

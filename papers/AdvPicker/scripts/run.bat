@@ -1,3 +1,6 @@
+: Copyright (c) Microsoft Corporation.
+: Licensed under the MIT license.
+
 set GPU_ID=0
 set SEEDS=320 550 631 691 985
 set TGTS=de es nl
