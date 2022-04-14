@@ -14,7 +14,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # Recent Papers:
 
-* [On the Effectiveness of Sentence Encoding forIntent Detection Meta-Learning](https://arxiv.org/abs/X), *Tingting Ma1, Qianhui Wu, Zhiwei Yu, Tiejun Zhao1, Chin-Yew Lin*, NAACL 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/IDML**
+* [On the Effectiveness of Sentence Encoding forIntent Detection Meta-Learning](https://arxiv.org/abs/X), *Tingting Ma, Qianhui Wu, Zhiwei Yu, Tiejun Zhao, Chin-Yew Lin*, NAACL 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/IDML**
 * [Decomposed Meta-Learning for Few-Shot Named Entity Recognition](https://arxiv.org/abs/2204.05751), *Tingting Ma, Huiqiang Jiang, Qianhui Wu, Tiejun Zhao, Chin-Yew Lin*, Findings of the ACL 2022. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/DecomposedMetaNER**
 * [AdvPicker: Effectively Leveraging Unlabeled Data via Adversarial Discriminator for Cross-Lingual NER](https://arxiv.org/abs/2106.02300), *Weile Chen, Huiqiang Jiang, Qianhui Wu, Börje F. Karlsson, Yi Guan*, ACL 2021. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/AdvPicker**
 * [ReTraCk: A Flexible and Efficient Framework for Knowledge Base Question Answering](https://aclanthology.org/2021.acl-demo.39/), *Shuang Chen, Qian Liu, Zhiwei Yu, Chin-Yew Lin, Jian-Guang Lou, Feng Jiang*, ACL 2021. (demo paper) <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/ReTraCk**
