@@ -4,7 +4,7 @@ This repository will contain the open-sourced official implementation of the pap
 
 [LinkingPark: An Automatic Semantic Table Interpretation System](https://__) (2022).
 
-If you find this repo helpful, please cite either of the following versions of the paper:
+If you find this repo helpful, please cite the following version of the paper (under submission, full information to be added on acceptance):
 ```tex
 @inproceedings{lp_v2_chen_2022,
   author    = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin},
