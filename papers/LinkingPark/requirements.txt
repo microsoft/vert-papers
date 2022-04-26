@@ -1,0 +1,18 @@
+beautifulsoup4
+gensim
+Flask
+numpy==1.22.3
+pandas
+prettytable
+python-Levenshtein
+redis
+tqdm
+tornado
+jsonlines
+requests
+elasticsearch==7.16.2
+wget
+python-rocksdb
+urllib3==1.26.5
+#unit tests
+pytest
