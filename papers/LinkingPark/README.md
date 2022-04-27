@@ -20,7 +20,7 @@ For any questions/comments, please feel free to open GitHub issues.
 
 ### Download LinkingPark resources
 
-Redis/RockDB dump files, and other necessary files to run the LinkingPark can be downloaded from [Azure storage](https://kcpapers.blob.core.windows.net/lp-2002/LP_Data.zip). Please extract the downloaded file to a local directory to be used in the system setup below. 
+Redis/RockDB dump files, and other necessary files to run the LinkingPark can be downloaded from [Azure storage](https://kcpapers.blob.core.windows.net/lp-2022/LP_Data.zip). Please extract the downloaded file to a local directory to be used in the system setup below. 
 
 ### Env Setup
 ```shell
