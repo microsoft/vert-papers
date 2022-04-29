@@ -1,6 +1,6 @@
 # Decomposed Meta-Learning for Few-Shot Named Entity Recognition
 
-This repository will contains the open-sourced official implementation of the paper:
+This repository contains the open-sourced official implementation of the paper:
 
 [Decomposed Meta-Learning for Few-Shot Named Entity Recognition](https://arxiv.org/abs/2204.05751) (Findings of the ACL 2022).
 
