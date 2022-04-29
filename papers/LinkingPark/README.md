@@ -1,28 +1,59 @@
 # LinkingPark: An Automatic Semantic Table Interpretation System
 
-This repository will contain the open-sourced official implementation of the paper:
+This repository contains the open-sourced official implementation of LinkingPark, as described in the paper:
 
 [LinkingPark: An Automatic Semantic Table Interpretation System](https://__) (2022).
 
-If you find this repo helpful, please cite the following version of the paper (under submission, full information to be added on acceptance):
+If you find this repo helpful, please cite the following version of the paper (under submission, full information to be added upon acceptance):
 ```tex
-@inproceedings{lp_v2_chen_2022,
+@inproceedings{lp_system_chen_2022,
   author    = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin},
   title     = {LinkingPark: An Automatic Semantic Table Interpretation System},
   year      = {2022},
+}
+```
+or the software release itself:
+```tex
+@software{shuang_chen_2022_6496662,
+  author       = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Börje F. Karlsson, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andry Gordon,               Chin-Yew Lin},
+  title        = {{LinkingPark: Automatic Semantic Table Interpretation Software}},
+  month        = apr,
+  year         = 2022,
+  note         = {{https://github.com/microsoft/vert-papers/tree/master/papers/LinkingPark}},
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.6496662},
+  url          = {https://doi.org/10.5281/zenodo.6496662}
+}
+```
+
+A previous version of Linking part, which won 2nd place in the SemTab 2020 competition is described in:
+```tex
+@inproceedings{lp_v0_chen_2020,
+  author    = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Andy Gordon, Chin-Yew Lin},
+  title     = {LinkingPark: An integrated approach for Semantic Table Interpretation},
+  year      = {2020},
+  booktitle = {Semantic Web Challenge on Tabular Data to Knowledge Graph Matching (SemTab 2020) at ISWC 2020},
 }
 ```
 
 For any questions/comments, please feel free to open GitHub issues.
 
 
+## The LinkingPark system
+
+LinkingPark is an automatic semantic annotation system for tabular data to knowledge graph matching. The system is designed as a modular framework which can handle Cell-Entity Annotation (CEA), Column-Type Annotation (CTA), and Columns-Property Annotation (CPA). LinkingPark has a number of desirable properties,
+including a stand-alone architecture, flexibility for multilingual support, no dependence on labeled data, etc. 
+
+The LP release in this repository utilizes [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) as its default backing knowledge base. For more details, please refer to the papers above.
+
 ## Configuring LinkingPark
 
 ### Download LinkingPark resources
 
-Redis/RockDB dump files, and other necessary files to run the LinkingPark can be downloaded from [Azure storage](https://kcpapers.blob.core.windows.net/lp-2022/LP_Data.zip). Please extract the downloaded file to a local directory to be used in the system setup below. 
+Redis/RockDB dump files, and other necessary files to run the LinkingPark system/demo can be downloaded from [Azure storage](https://kcpapers.blob.core.windows.net/lp-2022/LP_Data.zip). Please extract the downloaded file to a local directory to be used in the system setup below. 
 
-### Env Setup
+### Environment setup
 ```shell
 export BASE_DATA_DIR="{path to the downloaded data}"
 ```
@@ -34,10 +65,11 @@ conda activate lp_env
 pip install -r requirements.txt
 ```
 
-LinkingPark leverages [RocksDB](http://rocksdb.org/), [Redis](https://redis.io/)
-for data store, and [Elastic Search](https://www.elastic.co/) to conduct fuzzy matching.
+### Installing dependency services
 
-### RocksDB
+LinkingPark leverages [RocksDB](http://rocksdb.org/) and [Redis](https://redis.io/) for data store, and [Elastic Search](https://www.elastic.co/) to conduct fuzzy matching.
+
+#### RocksDB
 
 According to the [guide](https://python-rocksdb.readthedocs.io/en/latest/installation.html).
 
@@ -56,12 +88,10 @@ export LIBRARY_PATH=${LIBRARY_PATH}:`pwd`
 pip install git+git://github.com/twmht/python-rocksdb.git#egg=python-rocksdb
 ```
 
+#### Elastic Search
 
 
-### Elastic Search
-
-
-#### Installation
+##### Installation
 
 ```shell
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.8.1-linux-x86_64.tar.gz
@@ -71,13 +101,13 @@ tar -xzf elasticsearch-7.8.1-linux-x86_64.tar.gz
 cd elasticsearch-7.8.1/
 ```
 
-#### Start elasticsearch server
+##### Start elasticsearch server
 
 ```shell
 ./bin/elasticsearch
 ```
 
-#### Create index and add mappings
+##### Create index and add mappings
 
 ```shell
 # Index for alias mapping removing disambiguation pages
@@ -86,7 +116,7 @@ bash WikidataDumpProcessor/elastic_search_utils/setup_elastic_search.sh "wikidat
 bash WikidataDumpProcessor/elastic_search_utils/setup_elastic_search.sh "wikidata_keep_disambiguation"
 ```
 
-#### Build index
+##### Build index
 
 ```
 # Build index for alias mapping removing disambiguation pages
@@ -95,7 +125,7 @@ python WikidataDumpProcessor/elastic_search_utils/build_elastic_search.py --inde
 python WikidataDumpProcessor/elastic_search_utils/build_elastic_search.py --index_name "wikidata_keep_disambiguation" --alias2qids_fn $BASE_DATA_DIR/wikidata/merged_alias_map/alias_map_keep_disambiguation.pkl 
 ```
 
-### Redis
+#### Redis
 ```
 wget https://download.redis.io/releases/redis-6.2.5.tar.gz
 tar xzf redis-6.2.5.tar.gz
