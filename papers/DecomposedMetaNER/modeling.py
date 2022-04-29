@@ -1,5 +1,6 @@
 # Copyright (c) Microsoft Corporation.
-# Licensed under the MIT license.d
+# Licensed under the MIT license.
+
 import logging
 from copy import deepcopy
 
