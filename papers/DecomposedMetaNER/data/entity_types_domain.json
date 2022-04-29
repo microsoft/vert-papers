@@ -1,0 +1,52 @@
+{
+    "O": [
+        "O"
+    ],
+    "Wiki": [
+        "abstract",
+        "animal",
+        "event",
+        "object",
+        "organization",
+        "person",
+        "place",
+        "plant",
+        "quantity",
+        "substance",
+        "time"
+    ],
+    "SocialMedia": [
+        "corporation",
+        "creative-work",
+        "group",
+        "location",
+        "person",
+        "product"
+    ],
+    "News": [
+        "LOC",
+        "MISC",
+        "ORG",
+        "PER"
+    ],
+    "OntoNotes": [
+        "CARDINAL",
+        "DATE",
+        "EVENT",
+        "FAC",
+        "GPE",
+        "LANGUAGE",
+        "LAW",
+        "LOC",
+        "MONEY",
+        "NORP",
+        "ORDINAL",
+        "ORG",
+        "PERCENT",
+        "PERSON",
+        "PRODUCT",
+        "QUANTITY",
+        "TIME",
+        "WORK_OF_ART"
+    ]
+}
