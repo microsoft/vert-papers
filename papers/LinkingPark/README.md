@@ -27,7 +27,7 @@ or the software release itself:
 }
 ```
 
-A previous version of Linking part, which won 2nd place in the SemTab 2020 competition is described in:
+A previous version of LinkingPark, which won 2nd place in the SemTab 2020 competition is described in:
 ```tex
 @inproceedings{lp_v0_chen_2020,
   author    = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Andy Gordon, Chin-Yew Lin},
