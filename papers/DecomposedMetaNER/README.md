@@ -32,7 +32,7 @@ Few-shot named entity recognition (NER) systems aim at recognizing novel-class n
 
 ### Requirements
 
-- python 3.7.0
+- python 3.9
 - pytorch 1.9.0+cu111
 - [HuggingFace Transformers 4.10.0](https://github.com/huggingface/transformers)
 - Few-NERD dataset

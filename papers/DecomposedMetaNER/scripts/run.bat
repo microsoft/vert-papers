@@ -1,3 +1,5 @@
+: Copyright (c) Microsoft Corporation.
+: Licensed under the MIT license.
 set SEEDS=171 354 550 667 985
 set N=5
 set K=1
