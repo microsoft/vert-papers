@@ -1,6 +1,6 @@
 # Decomposed Meta-Learning for Few-Shot Named Entity Recognition
 
-This repository will contain the open-sourced official implementation of the paper:
+This repository will contains the open-sourced official implementation of the paper:
 
 [Decomposed Meta-Learning for Few-Shot Named Entity Recognition](https://arxiv.org/abs/2204.05751) (Findings of the ACL 2022).
 
@@ -60,11 +60,6 @@ call scripts\run.bat
 ```
 
 If you only want to predict in the trained model, you can get the model from [Azure blob](https://kcpapers.blob.core.windows.net/dmn-findings-acl-2022/dmn-all.zip).
-You can also use `azcopy` to download it, like the below shell script.
-
-```bash
-azcopy copy "https://kcpapers.blob.core.windows.net/dmn-findings-acl-2022/dmn-all.zip" ./
-```
 
 Put the `models-{N}-{K}-{mode}` folder in `papers/DecomposedMetaNER` directory.
 
@@ -98,7 +93,7 @@ We report the few-shot NER results of the proposed DecomposedMetaNER on the 1~2 
 
 ### Few-NERD ACL Version
 
-You can download this version dataset in [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/8483dc1a34da4a34ab58/?dl=1)'s website.
+Available from [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/8483dc1a34da4a34ab58/?dl=1).
 
 |                                                          | Intra 5-1        | Intra 10-1       | Intra 5-5        | Intra 10-5       | Inter 5-1        | Inter 10-1       | Inter 5-5        | Inter 10-5       |
 | -------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
@@ -111,7 +106,7 @@ You can download this version dataset in [Ding et al., 2021](https://cloud.tsing
 
 ### Few-NERD Arxiv Version
 
-You can download this version dataset in [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/0e38bd108d7b49808cc4/?dl=1)'s website.
+Available from [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/0e38bd108d7b49808cc4/?dl=1).
 
 |                                                | Intra 5-1        | Intra 10-1       | Intra 5-5        | Intra 10-5       | Inter 5-1        | Inter 10-1       | Inter 5-5        | Inter 10-5       |
 | ---------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
