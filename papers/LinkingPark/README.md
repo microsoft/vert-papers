@@ -2,7 +2,7 @@
 
 This repository contains the open-sourced official implementation of LinkingPark, as described in the paper:
 
-[LinkingPark: An Automatic Semantic Table Interpretation System](https://__) (2022).
+[LinkingPark: An Automatic Semantic Table Interpretation System](http://ceur-ws.org/Vol-2775/paper7.pdf) (2020).
 
 If you find this repo helpful, please cite the following version of the paper (under submission, full information to be added upon acceptance):
 ```tex
@@ -10,6 +10,8 @@ If you find this repo helpful, please cite the following version of the paper (u
   author    = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin},
   title     = {LinkingPark: An Automatic Semantic Table Interpretation System},
   year      = {2022},
+  journal   = {arXiv},
+  url       = {http://ceur-ws.org/Vol-2775/paper7.pdf},
 }
 ```
 or the software release itself:
