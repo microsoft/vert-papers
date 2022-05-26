@@ -120,7 +120,7 @@ srsly==0.0.7
 tabulate==0.8.3
 tensorboard==1.13.1
 tensorboardX==1.7
-tensorflow==1.13.1
+tensorflow==2.7.2
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 thinc==7.0.4
