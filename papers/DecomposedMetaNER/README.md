@@ -9,14 +9,16 @@ _Tingting Ma, Huiqiang Jiang, Qianhui Wu, Tiejun Zhao, and Chin-Yew Lin_
 If you find this repo helpful, please cite the following paper:
 
 ```bibtex
-@inproceedings{ma2022decomposedmetaner,
-    title="{D}ecomposed {M}eta-{L}earning for {F}ew-{S}hot {N}amed {E}ntity {R}ecognition",
-    author={Tingting Ma and Huiqiang Jiang and Qianhui Wu and Tiejun Zhao and Chin-Yew Lin},
-    year={2022},
-    month={aug},
-    booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics},
-    publisher={Association for Computational Linguistics},
-    url={https://arxiv.org/abs/2204.05751},
+@inproceedings{ma-etal-2022-decomposed,
+    title = "Decomposed Meta-Learning for Few-Shot Named Entity Recognition",
+    author = "Ma, Tingting and Jiang, Huiqiang and Wu, Qianhui and Zhao, Tiejun and Lin, Chin-Yew",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.124",
+    pages = "1584--1596",
 }
 ```
 
@@ -93,7 +95,7 @@ We report the few-shot NER results of the proposed DecomposedMetaNER on the 1~2 
 
 ### Few-NERD ACL Version
 
-Available from [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/8483dc1a34da4a34ab58/?dl=1).
+You can contact [Ding et al., 2021](https://aclanthology.org/2021.acl-long.248) to get this dataset.
 
 |                                                          | Intra 5-1        | Intra 10-1       | Intra 5-5        | Intra 10-5       | Inter 5-1        | Inter 10-1       | Inter 5-5        | Inter 10-5       |
 | -------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
@@ -106,7 +108,7 @@ Available from [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/8483dc1a34da4
 
 ### Few-NERD Arxiv Version
 
-Available from [Ding et al., 2021](https://cloud.tsinghua.edu.cn/f/0e38bd108d7b49808cc4/?dl=1).
+Available from [Ding et al., 2021](https://github.com/thunlp/Few-NERD/blob/main/data/download.sh#L20).
 
 |                                                | Intra 5-1        | Intra 10-1       | Intra 5-5        | Intra 10-5       | Inter 5-1        | Inter 10-1       | Inter 5-5        | Inter 10-5       |
 | ---------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |

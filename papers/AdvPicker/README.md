@@ -60,9 +60,9 @@ For _Windows_ machines,
 call scripts\run.bat
 ```
 
-If you only want to predict in the trained model, you can get the model from [OneDrive](https://microsoftapc-my.sharepoint.com/:f:/g/personal/hjiang_microsoft_com/ErS3_cs5aQ5KjM-TvqqiM4UB-vEgemCwLFyQvcvz6_NChw?e=lobLbv).
+If you only want to predict in the trained model, you can get the model from [Azure blob](https://kcpapers.blob.core.windows.net/advpicker-acl2021/OneSeed.zip).
 To easier to use and download, we only put one seed model in that.
-If you need all of models, you can download them from [OneDrive](https://microsoftapc-my.sharepoint.com/:f:/g/personal/hjiang_microsoft_com/Eloj7PaWT-VAqyP3D4B7GB8BvKIAJ-OlU1gs2wxUq_o2Fg?e=YZbd3H).
+If you need all of models, you can download them from [Azure blob](https://kcpapers.blob.core.windows.net/advpicker-acl2021/AllSeed.zip).
 Put the `result` folder in `papers/AdvPicker` directory.
 
 For _Linux_ machines,
