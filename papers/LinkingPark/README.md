@@ -4,18 +4,20 @@ This repository contains the open-sourced official implementation of LinkingPark
 
 [LinkingPark: An Automatic Semantic Table Interpretation System](https://__) (2022).
 
-If you find this repo helpful, please cite the following version of the paper (under submission, full information to be added upon acceptance):
+If you find this repo helpful, please cite the following version of the paper (accepted by Journal of Web Semantics, full information to be added upon paper is online):
 ```tex
-@inproceedings{lp_system_chen_2022,
-  author    = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin},
-  title     = {LinkingPark: An Automatic Semantic Table Interpretation System},
-  year      = {2022},
+@article{chen_2022_lp_v2_jows,
+title = {LinkingPark: An Automatic Semantic Table Interpretation System},
+journal = {Journal of Web Semantics},
+year = {2022},
+issn = {1570-8268},
+author = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin},
 }
 ```
 or the software release itself:
 ```tex
 @software{shuang_chen_2022_6496662,
-  author       = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Börje F. Karlsson, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andry Gordon,               Chin-Yew Lin},
+  author       = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Börje F. Karlsson, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andry Gordon, Chin-Yew Lin},
   title        = {{LinkingPark: Automatic Semantic Table Interpretation Software}},
   month        = apr,
   year         = 2022,
