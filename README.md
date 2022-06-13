@@ -16,7 +16,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # Recent Papers:
 
-* [LinkingPark: An Automatic Semantic Table Interpretation System](https://arxiv.org/abs/X), *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin*. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/LinkingPark**
+* [LinkingPark: An Automatic Semantic Table Interpretation System](https://arxiv.org/abs/X), *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin*, Journal of Web Semantics, 2022. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/LinkingPark**
 * [Rows from Many Sources: Enriching row completions from Wikidata with a pre-trained Language Model](https://arxiv.org/abs/2204.07014), *Carina Negreanu, Alperen Karaoglu, Jack Williams, Shuang Chen, Daniel Fabian, Andrew Gordon, Chin-Yew Lin*, Wiki Workshop 2022.
 * [On the Effectiveness of Sentence Encoding for Intent Detection Meta-Learning](https://arxiv.org/abs/X), *Tingting Ma, Qianhui Wu, Zhiwei Yu, Tiejun Zhao, Chin-Yew Lin*, NAACL 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/IDML**
 * [Decomposed Meta-Learning for Few-Shot Named Entity Recognition](https://arxiv.org/abs/2204.05751), *Tingting Ma, Huiqiang Jiang, Qianhui Wu, Tiejun Zhao, Chin-Yew Lin*, Findings of the ACL 2022. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/DecomposedMetaNER**
