@@ -72,6 +72,8 @@ def process_config(args: argparse.Namespace):
         "schema_entity_meta_fn": config.schema_entity_meta_fn,
         "candid_gen_method": config.candid_gen_method,
     }
+    if "min_property_threshold" in args_dict:
+        params["min_property_threshold"] = args_dict['min_property_threshold']
 
     return params
 

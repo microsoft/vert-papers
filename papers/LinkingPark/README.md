@@ -8,9 +8,13 @@ If you find this repo helpful, please cite the following version of the paper (a
 ```tex
 @article{chen_2022_lp_v2_jows,
 title = {LinkingPark: An Automatic Semantic Table Interpretation System},
+volume = {74},
+pages = {100733},
 journal = {Journal of Web Semantics},
 year = {2022},
 issn = {1570-8268},
+doi = {https://doi.org/10.1016/j.websem.2022.100733},
+url = {https://www.sciencedirect.com/science/article/pii/S1570826822000233},
 author = {Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin},
 }
 ```

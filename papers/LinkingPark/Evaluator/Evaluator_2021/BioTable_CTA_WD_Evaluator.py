@@ -1,0 +1,161 @@
+import pandas as pd
+import json
+import os
+import argparse
+
+
+# prefix1 = 'http://www.wikidata.org/entity/'
+# prefix2 = 'https://www.wikidata.org/wiki/'
+
+
+class CTA_Evaluator:
+    def __init__(self, answer_file_path, round=1):
+        """
+        `round` : Holds the round for which the evaluation is being done.
+        can be 1, 2...upto the number of rounds the challenge has.
+        Different rounds will mostly have different ground truth files.
+        """
+        self.answer_file_path = answer_file_path
+        self.round = round
+
+    def _evaluate(self, client_payload, _context={}):
+        """
+        `client_payload` will be a dict with (atleast) the following keys :
+          - submission_file_path : local file path of the submitted file
+          - aicrowd_submission_id : A unique id representing the submission
+          - aicrowd_participant_id : A unique id for participant/team submitting (if enabled)
+        """
+        submission_file_path = client_payload["submission_file_path"]
+        aicrowd_submission_id = client_payload["aicrowd_submission_id"]
+        aicrowd_participant_uid = client_payload["aicrowd_participant_id"]
+
+        gt_ancestor = json.load(open("HardTablesR2_CTA_WD_gt_ancestor.json"))
+        gt_descendent = json.load(open("HardTablesR2_CTA_WD_gt_descendent.json"))
+
+        cols, col_type = set(), dict()
+        gt = pd.read_csv(self.answer_file_path, delimiter=',', names=['tab_id', 'col_id', 'type'],
+                         dtype={'tab_id': str, 'col_id': str, 'type': str}, keep_default_na=False)
+        for index, row in gt.iterrows():
+            col = '%s %s' % (row['tab_id'], row['col_id'])
+            gt_type = row['type']
+
+            """
+               Trim the entity prefix to avoid mismatching
+            """
+
+            # if gt_type.startswith(prefix1):
+            #     gt_type = gt_type[len(prefix1):]
+            #
+            # if gt_type.startswith(prefix2):
+            #     gt_type = gt_type[len(prefix2):]
+
+            col_type[col] = gt_type
+            cols.add(col)
+
+        annotated_cols = set()
+        total_score = 0
+        sub = pd.read_csv(submission_file_path, delimiter=',', names=['tab_id', 'col_id', 'annotation'],
+                          dtype={'tab_id': str, 'col_id': str, 'annotation': str}, keep_default_na=False)
+        for index, row in sub.iterrows():
+            col = '%s %s' % (row['tab_id'], row['col_id'])
+            if col in annotated_cols:
+                # continue
+                raise Exception("Duplicate columns in the submission file")
+            else:
+                annotated_cols.add(col)
+            annotation = row['annotation']
+            if annotation.startswith('http://www.wikidata.org/wiki/'):
+                annotation = 'http://www.wikidata.org/entity/' + annotation[len("http://www.wikidata.org/wiki/"):]
+
+            """
+                Trim the entity prefix to avoid mismatching 
+            """
+            # if annotation.startswith(prefix1):
+            #     annotation = annotation[len(prefix1):]
+            #
+            # if annotation.startswith(prefix2):
+            #     annotation = annotation[len(prefix2):]
+
+            if col in cols:
+                max_score = 0
+                for gt_type in col_type[col].split():
+                    if gt_type.startswith('https://www.wikidata.org/wiki/'):
+                        gt_type = 'http://www.wikidata.org/entity/' + gt_type[len("https://www.wikidata.org/wiki/"):]
+                    ancestor = gt_ancestor[gt_type]
+                    ancestor_keys = [k.lower() for k in ancestor]
+                    descendent = gt_descendent[gt_type]
+                    descendent_keys = [k.lower() for k in descendent]
+                    if annotation.lower() == gt_type.lower():
+                        score = 1.0
+                    elif annotation.lower() in ancestor_keys:
+                        depth = int(ancestor[annotation])
+                        if depth <= 5:
+                            score = pow(0.8, depth)
+                        else:
+                            score = 0
+                    elif annotation.lower() in descendent_keys:
+                        depth = int(descendent[annotation])
+                        if depth <= 3:
+                            score = pow(0.7, depth)
+                        else:
+                            score = 0
+                    else:
+                        score = 0
+                    if score > max_score:
+                        max_score = score
+
+                total_score += max_score
+
+        precision = total_score / len(annotated_cols) if len(annotated_cols) > 0 else 0
+        recall = total_score / len(cols)
+        f1 = (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+
+        main_score = f1
+        secondary_score = precision
+
+        print('%.3f %.3f %.3f' % (f1, precision, recall))
+
+        """
+        Do something with your submitted file to come up
+        with a score and a secondary score.
+
+        if you want to report back an error to the user,
+        then you can simply do :
+          `raise Exception("YOUR-CUSTOM-ERROR")`
+
+         You are encouraged to add as many validations as possible
+         to provide meaningful feedback to your users
+        """
+        _result_object = {
+            "score": main_score,
+            "score_secondary": secondary_score
+        }
+        return _result_object
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--gt-fn",
+                        type=str,
+                        required=True)
+    parser.add_argument("--submission-fn",
+                        type=str,
+                        required=True)
+    args = parser.parse_args()
+    # Lets assume the the ground_truth is a CSV file
+    # and is present at data/ground_truth.csv
+    # and a sample submission is present at data/sample_submission.csv
+    answer_file_path = args.gt_fn
+
+    _client_payload = {}
+    _client_payload["submission_file_path"] = args.submission_fn
+    _client_payload["aicrowd_submission_id"] = 1123
+    _client_payload["aicrowd_participant_id"] = 1234
+
+    # Instaiate a dummy context
+    _context = {}
+    # Instantiate an evaluator
+    aicrowd_evaluator = CTA_Evaluator(answer_file_path)
+    # Evaluate
+    result = aicrowd_evaluator._evaluate(_client_payload, _context)
+    print(result)
