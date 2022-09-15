@@ -28,7 +28,7 @@ def get_label_list(args):
     return label_list
 
 
-def get_data_path(agrs, train_mode: str):
+def get_data_path(args, train_mode: str):
     assert args.dataset in [
         "FewNERD",
         "Domain",
