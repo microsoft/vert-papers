@@ -93,20 +93,20 @@ And place them in the correct locations: `./`.
 
 We report the few-shot NER results of the proposed DecomposedMetaNER on the 1~2 shot and 5~10 shot, alongside those reported by prior state-of-the-art methods.
 
-### Few-NERD ACL Version
+### Few-NERD Arxiv V5 Version
 
-You can contact [Ding et al., 2021](https://aclanthology.org/2021.acl-long.248) to get this dataset.
+You can contact [Ding et al., 2021](https://arxiv.org/pdf/2105.07464v5.pdf) to get this dataset.
 
 |                                                          | Intra 5-1        | Intra 10-1       | Intra 5-5        | Intra 10-5       | Inter 5-1        | Inter 10-1       | Inter 5-5        | Inter 10-5       |
 | -------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- |
-| [ProtoBERT](https://aclanthology.org/2021.acl-long.248)  | 23.45 ± 0.92     | 19.76 ± 0.59     | 41.93 ± 0.55     | 34.61 ± 0.59     | 44.44 ± 0.11     | 39.09 ± 0.87     | 58.80 ± 1.42     | 53.97 ± 0.38     |
-| [NNShot](https://aclanthology.org/2021.acl-long.248)     | 31.01 ± 1.21     | 21.88 ± 0.23     | 35.74 ± 2.36     | 27.67 ± 1.06     | 54.29 ± 0.40     | 46.98 ± 1.96     | 50.56 ± 3.33     | 50.00 ± 0.36     |
-| [StructShot](https://aclanthology.org/2021.acl-long.248) | 35.92 ± 0.69     | 25.38 ± 0.84     | 38.83 ± 1.72     | 26.39 ± 2.59     | 57.33 ± 0.53     | 49.46 ± 0.53     | 57.16 ± 2.09     | 49.39 ± 1.77     |
+| [ProtoBERT](https://arxiv.org/pdf/2105.07464v5.pdf)  | 23.45 ± 0.92     | 19.76 ± 0.59     | 41.93 ± 0.55     | 34.61 ± 0.59     | 44.44 ± 0.11     | 39.09 ± 0.87     | 58.80 ± 1.42     | 53.97 ± 0.38     |
+| [NNShot](https://arxiv.org/pdf/2105.07464v5.pdf)     | 31.01 ± 1.21     | 21.88 ± 0.23     | 35.74 ± 2.36     | 27.67 ± 1.06     | 54.29 ± 0.40     | 46.98 ± 1.96     | 50.56 ± 3.33     | 50.00 ± 0.36     |
+| [StructShot](https://arxiv.org/pdf/2105.07464v5.pdf) | 35.92 ± 0.69     | 25.38 ± 0.84     | 38.83 ± 1.72     | 26.39 ± 2.59     | 57.33 ± 0.53     | 49.46 ± 0.53     | 57.16 ± 2.09     | 49.39 ± 1.77     |
 | [CONTAINER](https://arxiv.org/abs/2109.07589)            | 40.43            | 33.84            | 53.70            | 47.49            | 55.95            | 48.35            | 61.83            | 57.12            |
 | [ESD](https://arxiv.org/abs/2109.13023v1)                | 41.44 ± 1.16     | 32.29 ± 1.10     | 50.68 ± 0.94     | 42.92 ± 0.75     | 66.46 ± 0.49     | 59.95 ± 0.69     | **74.14** ± 0.80 | 67.91 ± 1.41     |
 | **DecomposedMetaNER**                                    | **52.04** ± 0.44 | **43.50** ± 0.59 | **63.23** ± 0.45 | **56.84** ± 0.14 | **68.77** ± 0.24 | **63.26** ± 0.40 | 71.62 ± 0.16     | **68.32** ± 0.10 |
 
-### Few-NERD Arxiv Version
+### Few-NERD Arxiv V6 Version
 
 Available from [Ding et al., 2021](https://github.com/thunlp/Few-NERD/blob/main/data/download.sh#L20).
 
