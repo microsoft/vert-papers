@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
 import argparse
 import os
 from Utils.utils_data import read_cea_target, read_cta_target, read_cpa_target,\

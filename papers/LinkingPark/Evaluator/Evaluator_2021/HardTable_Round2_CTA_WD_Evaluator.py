@@ -1,3 +1,7 @@
+"""
+The code is adapted from the official SemTab evaluator: https://github.com/sem-tab-challenge/aicrowd-evaluator
+"""
+
 import pandas as pd
 import json
 import os

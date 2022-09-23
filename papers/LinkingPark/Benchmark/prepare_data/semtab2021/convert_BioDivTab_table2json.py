@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
 import os
 import json
 from Utils.utils_data import pd_read_csv_keep_header

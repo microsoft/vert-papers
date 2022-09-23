@@ -1,3 +1,6 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+
 benchmark_dir="${BASE_DATA_DIR_SEMTAB21}/SemTab/Benchmark/"
 mkdir ${benchmark_dir}
 cd ${benchmark_dir}
