@@ -80,7 +80,7 @@ plac==0.9.6
 pluggy==0.12.0
 preshed==2.0.1
 prompt-toolkit==2.0.9
-protobuf==3.8.0
+protobuf==3.18.3
 ptyprocess==0.6.0
 py==1.8.0
 pyasn1==0.4.5
