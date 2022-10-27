@@ -17,7 +17,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # Recent Papers:
 
-* [TIARA: Multi-grained Retrieval for Robust Question Answering over Large Knowledge Bases](https://arxiv.org/abs/2210.12925), *Yiheng Shu, Zhiwei Yu, Yuhan Li, Börje F. Karlsson Karlsson, Tingting Ma, Yuzhong Qu, Chin-Yew Lin*, EMNLP 2022, 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/TIARA**
+* [TIARA: Multi-grained Retrieval for Robust Question Answering over Large Knowledge Bases](https://arxiv.org/abs/2210.12925), *Yiheng Shu, Zhiwei Yu, Yuhan Li, Börje F. Karlsson, Tingting Ma, Yuzhong Qu, Chin-Yew Lin*, EMNLP 2022, 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/TIARA**
 * [LinkingPark: An Automatic Semantic Table Interpretation System](https://www.sciencedirect.com/science/article/abs/pii/S1570826822000233), *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin*, Journal of Web Semantics, 2022. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/LinkingPark**
 * [Rows from Many Sources: Enriching row completions from Wikidata with a pre-trained Language Model](https://arxiv.org/abs/2204.07014), *Carina Negreanu, Alperen Karaoglu, Jack Williams, Shuang Chen, Daniel Fabian, Andrew Gordon, Chin-Yew Lin*, Wiki Workshop 2022.
 * [On the Effectiveness of Sentence Encoding for Intent Detection Meta-Learning](https://arxiv.org/abs/X), *Tingting Ma, Qianhui Wu, Zhiwei Yu, Tiejun Zhao, Chin-Yew Lin*, NAACL 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/IDML**
