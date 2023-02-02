@@ -135,7 +135,7 @@ Unidecode==1.1.0
 urllib3==1.25.3
 wasabi==0.2.2
 wcwidth==0.1.7
-Werkzeug==0.15.4
+Werkzeug==0.15.5
 word2number==1.1
 wrapt==1.10.11
 zipp==0.5.1
