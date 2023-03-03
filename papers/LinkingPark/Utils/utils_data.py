@@ -4,12 +4,14 @@
 import pandas as pd
 import json
 
-wikidata_prefix = "http://www.wikidata.org/entity/"
-property_prefix = "http://www.wikidata.org/prop/direct/"
-
 
 def pd_read_csv(fn):
     df = pd.read_csv(fn, header=0)
+    return df.values.tolist()
+
+
+def pd_read_csv_keep_header(fn):
+    df = pd.read_csv(fn, header=None, keep_default_na=False)
     return df.values.tolist()
 
 
@@ -82,7 +84,20 @@ def read_cpa_target(target_fn):
         return targets
 
 
-def write_CEA_result(re_fn, col_entities, cea_targets):
+def read_all_pair_cpa_target(target_fn):
+    targets = dict()
+    with open(target_fn, encoding="utf-8", mode="r") as fp:
+        for line in fp:
+            line = line.replace("\"", "")
+            words = line.strip().split(',')
+            tab_id, src_id, trg_id = words[0], int(words[1]), int(words[2])
+            if tab_id not in targets:
+                targets[tab_id] = []
+            targets[tab_id].append((src_id, trg_id))
+        return targets
+
+
+def write_CEA_result(re_fn, col_entities, cea_targets, wikidata_prefix="http://www.wikidata.org/entity/"):
     with open(re_fn, encoding="utf-8", mode="w") as fp:
         for tab_id in cea_targets:
             for col_id in cea_targets[tab_id]:
@@ -91,17 +106,51 @@ def write_CEA_result(re_fn, col_entities, cea_targets):
                     for row_id in cea_targets[tab_id][col_id]:
                         # skip header line
                         if entities[row_id-1] != "NIL" and entities[row_id-1] != None:
-                            # fp.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(tab_id,
-                            #                                               col_id,
-                            #                                               row_id,
-                            #                                               wikidata_prefix+entities[row_id-1]))
                             fp.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(tab_id,
-                                                                          row_id,
-                                                                          col_id,
-                                                                          wikidata_prefix+entities[row_id-1]))
+                                                                            row_id,
+                                                                            col_id,
+                                                                            wikidata_prefix+entities[row_id-1]))
 
 
-def write_CTA_result(re_fn, column_types, cta_targets):
+def write_semtab21_biodivtab_CEA_result(re_fn,
+                                        col_entities,
+                                        cea_targets,
+                                        wikidata_prefix="https://www.wikidata.org/wiki/"):
+    with open(re_fn, encoding="utf-8", mode="w") as fp:
+        for tab_id in cea_targets:
+            for col_id in cea_targets[tab_id]:
+                if tab_id in col_entities and col_id in col_entities[tab_id]:
+                    entities = col_entities[tab_id][col_id]
+                    for row_id in cea_targets[tab_id][col_id]:
+                        if entities[row_id] != "NIL" and entities[row_id] != None:
+                            fp.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
+                                tab_id,
+                                col_id,
+                                row_id,
+                                wikidata_prefix+entities[row_id])
+                            )
+
+
+def write_semtab21_biotab_CEA_result(re_fn,
+                                     col_entities,
+                                     cea_targets,
+                                     wikidata_prefix="https://www.wikidata.org/wiki/"):
+    with open(re_fn, encoding="utf-8", mode="w") as fp:
+        for tab_id in cea_targets:
+            for col_id in cea_targets[tab_id]:
+                if tab_id in col_entities and col_id in col_entities[tab_id]:
+                    entities = col_entities[tab_id][col_id]
+                    for row_id in cea_targets[tab_id][col_id]:
+                        if entities[row_id] != "NIL" and entities[row_id] != None:
+                            fp.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
+                                tab_id,
+                                row_id,
+                                col_id,
+                                wikidata_prefix+entities[row_id])
+                            )
+
+
+def write_CTA_result(re_fn, column_types, cta_targets, wikidata_prefix="http://www.wikidata.org/entity/"):
     with open(re_fn, encoding="utf-8", mode="w") as fp:
         for tab_id in cta_targets:
             for col_id in cta_targets[tab_id]:
@@ -113,15 +162,56 @@ def write_CTA_result(re_fn, column_types, cta_targets):
                                                                  wikidata_prefix+best_type))
 
 
-def write_CPA_result(re_fn, column_properties, cpa_targets):
+def write_header_CTA_result(re_fn,
+                            col_entities,
+                            column_types,
+                            cta_targets,
+                            wikidata_prefix="http://www.wikidata.org/entity/"):
+    with open(re_fn, encoding="utf-8", mode="w") as fp:
+        for tab_id in cta_targets:
+            for col_id in cta_targets[tab_id]:
+                if (tab_id in col_entities) and (len(col_entities[tab_id]) > 0) and col_entities[tab_id][col_id][0] != "NIL":
+                    best_type = col_entities[tab_id][col_id][0]
+                    fp.write("\"{}\",\"{}\",\"{}\"\n".format(tab_id,
+                                                             col_id,
+                                                             wikidata_prefix + best_type))
+                    continue
+
+                if (tab_id in column_types) and (col_id in column_types[tab_id]):
+                    best_type = column_types[tab_id][col_id]
+                    if best_type != "":
+                        fp.write("\"{}\",\"{}\",\"{}\"\n".format(tab_id,
+                                                                 col_id,
+                                                                 wikidata_prefix+best_type))
+
+
+def write_CPA_result(re_fn, column_properties, cpa_targets, property_prefix="http://www.wikidata.org/prop/direct/"):
     with open(re_fn, encoding="utf-8", mode="w") as fp:
         for tab_id in cpa_targets:
             for col_id in cpa_targets[tab_id]:
                 if (tab_id in column_properties) and (col_id in column_properties[tab_id]):
                     property = column_properties[tab_id][col_id]
-                    fp.write("\"{}\",\"0\",\"{}\",\"{}\"\n".format(tab_id,
-                                                             col_id,
-                                                             property_prefix+property))
+                    fp.write("\"{}\",\"0\",\"{}\",\"{}\"\n".format(
+                        tab_id,
+                        col_id,
+                        property_prefix+property))
+
+
+def write_multi_subj_CPA_result(re_fn,
+                                tab_properties,
+                                cpa_targets,
+                                property_prefix="http://www.wikidata.org/prop/direct/"):
+    with open(re_fn, encoding="utf-8", mode="w") as fp:
+        for tab_id in cpa_targets:
+            for pair_id in cpa_targets[tab_id]:
+                if (tab_id in tab_properties) and (str(pair_id) in tab_properties[tab_id]):
+                    if len(tab_properties[tab_id][str(pair_id)]) > 0:
+                        property = tab_properties[tab_id][str(pair_id)][0]['property']
+                        fp.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
+                            tab_id,
+                            pair_id[0],
+                            pair_id[1],
+                            property_prefix+property))
 
 
 def load_cache_result(log_fn):
@@ -165,7 +255,46 @@ def load_cache_result(log_fn):
     return col_entities, col_types, col_properties
 
 
-def load_cache_result_for_analysis(log_fn):
+def load_multi_subj_cache_result(log_fn):
+    col_entities = dict()
+    col_types = dict()
+    tab_properties = dict()
+    with open(log_fn, mode="r", encoding="utf-8") as fp:
+        for line in fp:
+            out_tab = json.loads(line.strip())
+            tab_id = out_tab["tab_id"]
+            predict_entities = out_tab["predict_entities"]
+            revisit_predict_entities = out_tab["revisit_predict_entities"]
+            tab_pred_type = out_tab["tab_pred_type"]
+            if "fine_properties" in out_tab:
+                properties = out_tab["fine_properties"]
+            else:
+                properties = out_tab["coarse_properties"]
+            row_size = out_tab["row_size"]
+            col_size = out_tab["col_size"]
+            if tab_id not in col_entities:
+                col_entities[tab_id] = dict()
+            if tab_id not in col_types:
+                col_types[tab_id] = dict()
+            tab_properties[tab_id] = properties
+            for j in range(col_size):
+                if j == 0:
+                    entities = []
+                    for i in range(row_size):
+                        wikidata_id = revisit_predict_entities[str((i, j))]["entity"]
+                        entities.append(wikidata_id)
+                else:
+                    entities = []
+                    for i in range(row_size):
+                        wikidata_id = predict_entities[str((i, j))]["entity"]
+                        entities.append(wikidata_id)
+                col_entities[tab_id][j] = entities
+                col_types[tab_id][j] = tab_pred_type[str(j)]["best_type"]
+
+    return col_entities, col_types, tab_properties
+
+
+def load_cache_result_for_analysis_v2(log_fn):
     log = dict()
     with open(log_fn, encoding='utf-8', mode='r') as fp:
         for line in fp:
