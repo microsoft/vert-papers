@@ -1,0 +1,6 @@
+numpy
+torch
+seqeval
+scipy
+faiss-cpu
+transformers
