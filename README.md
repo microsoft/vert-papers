@@ -6,6 +6,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # News:
 
+* 2023-May: Two papers accepted by ACL'23, including [MLKD OOD](https://github.com/microsoft/KC/tree/main/papers/MLKD_OOD), and [CoLaDa](https://github.com/microsoft/vert-papers/tree/master/papers/CoLaDa).
 * 2022-Aug: The [**Recognizers-Text** project](https://github.com/microsoft/Recognizers-Text) reached over **5 million** package downloads (across NuGet/npm/PyPI)! 
 * 2022-May: **Tiara** (ReTraCk v2), KC's new knowledge base question answering (KBQA) system, has reached **#1** in all [Generalizable Question Answering (GrailQA)](https://dki-lab.github.io/GrailQA/) evaluation categories including Overall, Compositional Generalization, and Zero-Shot.  
 * 2022-Apr: We have now open-sourced the latest version of the [**LinkingPark** system](https://github.com/microsoft/vert-papers/tree/master/papers/LinkingPark) for automatic semantic table interpretation. This new version includes improved performance, stability, flexibility, and overall results. Contributions and collaboration are very welcome!
@@ -17,6 +18,8 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # Recent Papers:
 
+* [Multi-Level Knowledge Distillation for Out-of-Distribution Detection in Text](https://aclanthology.org/2023.acl-long.403/), *Qianhui Wu, Huiqiang Jiang, Haonan Yin, Börje Karlsson, Chin-Yew Lin*, ACL 2023. <br>Repository: **https://github.com/microsoft/KC/tree/main/papers/MLKD_OOD**
+* [ColaDa: A Collaborative Label Denoising Framework for Cross-lingual Named Entity Recognition](https://aclanthology.org/2023.acl-long.330/), *Tingting Ma, Qianhui Wu, Huiqiang Jiang, Börje Karlsson, Tiejun Zhao, Chin-Yew Lin*, ACL 2023. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/CoLaDa**
 * [TIARA: Multi-grained Retrieval for Robust Question Answering over Large Knowledge Bases](https://arxiv.org/abs/2210.12925), *Yiheng Shu, Zhiwei Yu, Yuhan Li, Börje F. Karlsson, Tingting Ma, Yuzhong Qu, Chin-Yew Lin*, EMNLP 2022, 2022. <br>Repository: **https://github.com/microsoft/KC/tree/master/papers/TIARA**
 * [LinkingPark: An Automatic Semantic Table Interpretation System](https://www.sciencedirect.com/science/article/abs/pii/S1570826822000233), *Shuang Chen, Alperen Karaoglu, Carina Negreanu, Tingting Ma, Jin-Ge Yao, Jack Williams, Feng Jiang, Andy Gordon, Chin-Yew Lin*, Journal of Web Semantics, 2022. <br>Repository: **https://github.com/microsoft/vert-papers/tree/master/papers/LinkingPark**
 * [Rows from Many Sources: Enriching row completions from Wikidata with a pre-trained Language Model](https://arxiv.org/abs/2204.07014), *Carina Negreanu, Alperen Karaoglu, Jack Williams, Shuang Chen, Daniel Fabian, Andrew Gordon, Chin-Yew Lin*, Wiki Workshop 2022.
