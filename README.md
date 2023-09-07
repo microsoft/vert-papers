@@ -6,7 +6,7 @@ Our group is hiring both research interns and full-time employees! If you are in
 
 # News:
 
-* 2023-Sep: The [**Recognizers-Text** project](https://github.com/microsoft/Recognizers-Text) has reached over **9 million** package downloads (across NuGet/npm/PyPI)! 
+* 2023-Sep: The [**Recognizers-Text** project](https://github.com/microsoft/Recognizers-Text) reached over **9 million** package downloads (across NuGet/npm/PyPI)! 
 * 2023-May: Three papers accepted by ACL'23, including [MLKD OOD](https://github.com/microsoft/KC/tree/main/papers/MLKD_OOD), [CoLaDa](https://github.com/microsoft/vert-papers/tree/master/papers/CoLaDa), and [TACR](https://arxiv.org/abs/2305.14682).
 * 2022-Aug: The [**Recognizers-Text** project](https://github.com/microsoft/Recognizers-Text) reached over **5 million** package downloads (across NuGet/npm/PyPI)! 
 * 2022-May: **Tiara** (ReTraCk v2), KC's new knowledge base question answering (KBQA) system, has reached **#1** in all [Generalizable Question Answering (GrailQA)](https://dki-lab.github.io/GrailQA/) evaluation categories including Overall, Compositional Generalization, and Zero-Shot.  
