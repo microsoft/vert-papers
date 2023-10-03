@@ -132,7 +132,7 @@ tqdm==4.32.2
 traitlets==4.3.2
 ujson==1.35
 Unidecode==1.1.0
-urllib3==1.25.3
+urllib3==1.26.17
 wasabi==0.2.2
 wcwidth==0.1.7
 Werkzeug==0.15.4
