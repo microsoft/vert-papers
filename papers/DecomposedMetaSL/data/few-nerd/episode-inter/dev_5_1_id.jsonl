@@ -1,0 +1,10 @@
+{"target_classes": ["event-other", "person-scholar", "organization-showorganization", "building-other", "organization-religion"], "query_idx": [2944, 11433, 13834, 9686, 14970], "support_idx": [15362, 12956, 9225, 6364, 17558]}
+{"target_classes": ["other-currency", "organization-religion", "building-other", "organization-showorganization", "person-other"], "query_idx": [16913, 16269, 1550, 5031, 6583], "support_idx": [365, 14279, 7493, 5495]}
+{"target_classes": ["product-train", "art-painting", "person-scholar", "organization-showorganization", "building-other"], "query_idx": [12906, 17326, 2405, 12872, 9081], "support_idx": [9686, 1202, 1422, 3779]}
+{"target_classes": ["location-park", "building-other", "product-train", "other-currency", "organization-religion"], "query_idx": [18096, 7281, 4038, 11566, 14149], "support_idx": [16798, 17009, 11792, 1476, 67]}
+{"target_classes": ["product-game", "location-park", "organization-showorganization", "building-other", "other-currency"], "query_idx": [1333, 16185, 15369, 13226, 18582], "support_idx": [4179, 12320, 4168, 5272, 557]}
+{"target_classes": ["product-train", "art-painting", "event-other", "building-library", "building-other"], "query_idx": [14660, 2874, 17317, 16888, 4034], "support_idx": [149, 5083, 13658, 12898, 1242]}
+{"target_classes": ["other-chemicalthing", "person-scholar", "other-currency", "building-other", "building-library"], "query_idx": [16000, 12005, 8526, 2955, 3635], "support_idx": [14882, 16916, 2826, 3466, 4354]}
+{"target_classes": ["building-other", "location-park", "organization-religion", "building-library", "product-train"], "query_idx": [9041, 17985, 11146, 9223, 3569], "support_idx": [15817, 3343, 15093, 3147, 18407]}
+{"target_classes": ["building-other", "organization-showorganization", "other-currency", "building-library", "product-game"], "query_idx": [14602, 14513, 3689, 16122, 11496], "support_idx": [213, 8006, 11213, 3411, 9197]}
+{"target_classes": ["organization-religion", "other-chemicalthing", "location-park", "person-scholar", "art-painting"], "query_idx": [3652, 12342, 14141, 7028, 1242], "support_idx": [16594, 2171, 6945, 6765, 12307]}
