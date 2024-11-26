@@ -13,6 +13,6 @@ requests
 elasticsearch==7.16.2
 wget
 python-rocksdb
-urllib3==1.26.5
+urllib3==1.26.17
 #unit tests
 pytest
