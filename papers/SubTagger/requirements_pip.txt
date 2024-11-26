@@ -35,7 +35,7 @@ ftfy==5.5.1
 gast==0.2.2
 gevent==1.4.0
 greenlet==0.4.15
-grpcio==1.16.1
+grpcio==1.53.0
 h5py==2.9.0
 idna==2.8
 imagesize==1.1.0
