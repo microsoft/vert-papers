@@ -97,7 +97,7 @@ pytz==2019.1
 PyYAML==5.1
 pyzmq==18.0.1
 regex==2019.6.8
-requests==2.22.0
+requests==2.31.0
 responses==0.10.6
 rsa==3.4.2
 s3transfer==0.2.1
